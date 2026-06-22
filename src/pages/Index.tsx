@@ -6,6 +6,7 @@ import { Numeros } from "@/components/oria/Numeros";
 import { Sobre } from "@/components/oria/Sobre";
 import { QuandoBuscar } from "@/components/oria/QuandoBuscar";
 import { Diferenciais } from "@/components/oria/Diferenciais";
+import { NoticiasHome } from "@/components/oria/NoticiasHome";
 import { Contato } from "@/components/oria/Contato";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -56,6 +57,7 @@ const IndexPage = () => {
         <Sobre />
         <QuandoBuscar />
         <Diferenciais />
+        <NoticiasHome />
         <Contato />
       </main>
       <Footer />

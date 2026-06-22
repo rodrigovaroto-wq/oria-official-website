@@ -12,6 +12,7 @@ const NAV_PT: NavLink[] = [
   { href: "/#diferenciais", label: "Diferenciais" },
   { href: "/casos", label: "Casos", external: true },
   { href: "/socios", label: "Sócios", external: true },
+  { href: "/noticias", label: "Notícias", external: true },
   { href: "/#contato", label: "Contato" },
 ];
 const NAV_EN: NavLink[] = [
@@ -21,6 +22,7 @@ const NAV_EN: NavLink[] = [
   { href: "/#diferenciais", label: "What Sets Us Apart" },
   { href: "/casos", label: "Case Studies", external: true },
   { href: "/socios", label: "Partners", external: true },
+  { href: "/noticias", label: "News", external: true },
   { href: "/#contato", label: "Contact" },
 ];
 
