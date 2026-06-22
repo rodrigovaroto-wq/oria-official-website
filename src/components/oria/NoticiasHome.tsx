@@ -25,7 +25,7 @@ export const NoticiasHome = () => {
             </>
           }
         />
-        <div className="grid gap-6 grid-cols-2 lg:grid-cols-3 reveal [&>*:nth-child(3)]:col-span-2 [&>*:nth-child(3)]:mx-auto [&>*:nth-child(3)]:w-1/2 lg:[&>*:nth-child(3)]:col-span-1 lg:[&>*:nth-child(3)]:mx-0 lg:[&>*:nth-child(3)]:w-auto">
+        <div className="grid gap-6 grid-cols-2 md:grid-cols-3 reveal [&>*:nth-child(3)]:col-span-2 [&>*:nth-child(3)]:mx-auto [&>*:nth-child(3)]:w-1/2 md:[&>*:nth-child(3)]:col-span-1 md:[&>*:nth-child(3)]:mx-0 md:[&>*:nth-child(3)]:w-auto">
           {posts.map((p) => (
             <NoticiaCard key={p.slug} post={p} />
           ))}
