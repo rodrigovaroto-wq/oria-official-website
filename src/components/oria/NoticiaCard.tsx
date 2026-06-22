@@ -30,7 +30,7 @@ export const NoticiaCard = ({ post }: Props) => {
 
       <div className="flex flex-col flex-1 p-6">
         <Link to={to}>
-          <h3 className="font-serif-display text-[20px] leading-[1.25] tracking-[-0.01em] text-foreground font-normal line-clamp-3 group-hover:text-accent transition-colors">
+          <h3 className="text-[20px] leading-[1.25] tracking-[-0.01em] text-foreground font-bold line-clamp-3 group-hover:text-accent transition-colors">
             {post.title}
           </h3>
         </Link>
