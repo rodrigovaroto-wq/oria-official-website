@@ -11,7 +11,8 @@ const NoticiaDetalhePage = () => {
   const { slug = "" } = useParams<{ slug: string }>();
   const post = getPostBySlug(slug);
 
-  const html = useMemo(() => (post ? marked.parse(post.body) as string : ""), [post]);
+  const longText = post?.summary_full || post?.body || post?.description || "";
+  const html = useMemo(() => (longText ? marked.parse(longText) as string : ""), [longText]);
 
   useSEO({
     title: post ? `${post.title} — Oria Partners` : "Notícia — Oria Partners",
