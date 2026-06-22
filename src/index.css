@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Oria Partners, Design System
+  Tokens HSL apenas. Identidade: papel quente, tinta profunda, acento terracota.
+*/
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 42 33% 95%;        /* paper #F7F5F0 */
+    --paper-warm: 42 27% 91%;        /* #EFEBE2 */
+    --foreground: 213 26% 9%;        /* ink #0F1419 */
+    --ink-soft: 215 24% 15%;         /* #1E2631 */
+    --muted: 60 2% 41%;              /* #6B6B68 */
+    --muted-foreground: 60 2% 41%;
+    --rule: 44 16% 79%;              /* #D4CFC2 */
+
+    /* Brand */
+    --primary: 213 26% 9%;
+    --primary-foreground: 42 33% 95%;
+    --accent: 11 59% 45%;            /* terracota #B5482F */
+    --accent-foreground: 42 33% 95%;
+    --accent-soft: 14 67% 75%;       /* #E8A992 */
+
+    /* Aliases shadcn */
+    --card: 42 33% 95%;
+    --card-foreground: 213 26% 9%;
+    --popover: 42 33% 95%;
+    --popover-foreground: 213 26% 9%;
+    --secondary: 42 27% 91%;
+    --secondary-foreground: 213 26% 9%;
+    --destructive: 11 59% 45%;
+    --destructive-foreground: 42 33% 95%;
+    --border: 44 16% 79%;
+    --input: 44 16% 79%;
+    --ring: 213 26% 9%;
+
+    --radius: 0;
+  }
+
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: clamp(12px, 1.1vw, 18px);
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Iowan Old Style', 'Iowan Old Style BT', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  img, video, iframe, svg {
+    max-width: 100%;
+  }
+
+  img, video {
+    height: auto;
+  }
+
+  ::selection {
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
+
+  @media (max-width: 768px) {
+    body { font-size: 16px; }
+  }
+}
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-variation-settings: "opsz" 144;
+  }
+  .font-mono-label {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .container-oria {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 clamp(18px, 4vw, 48px);
+    width: 100%;
+  }
+}
+
+@layer components {
+  .btn-oria {
+    @apply inline-flex items-center gap-[10px] px-7 py-4 text-sm font-medium border transition-all duration-300;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+  }
+  .btn-oria svg {
+    transition: transform 0.25s;
+  }
+  .btn-oria:hover svg {
+    transform: translateX(4px);
+  }
+  .btn-primary {
+    @apply btn-oria bg-foreground text-background border-foreground;
+  }
+  .btn-primary:hover {
+    background: hsl(var(--accent));
+    border-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+  .btn-secondary {
+    @apply btn-oria bg-transparent text-foreground border-foreground;
+  }
+  .btn-secondary:hover {
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
+  .btn-inverted {
+    @apply btn-oria bg-background text-foreground border-background;
+  }
+  .btn-inverted:hover {
+    background: hsl(var(--accent));
+    border-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.9s ease both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

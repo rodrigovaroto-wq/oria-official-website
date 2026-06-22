@@ -1,0 +1,66 @@
+import { useEffect } from "react";
+import { Nav } from "@/components/oria/Nav";
+import { Footer } from "@/components/oria/Footer";
+import { Hero } from "@/components/oria/Hero";
+import { Numeros } from "@/components/oria/Numeros";
+import { Sobre } from "@/components/oria/Sobre";
+import { QuandoBuscar } from "@/components/oria/QuandoBuscar";
+import { Diferenciais } from "@/components/oria/Diferenciais";
+import { Contato } from "@/components/oria/Contato";
+import { useSEO } from "@/hooks/useSEO";
+
+const SCHEMA_HOME = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://oriapartners.com/#webpage",
+  url: "https://oriapartners.com/",
+  name: "Oria Partners — Reestruturação Financeira e Turnaround",
+  description:
+    "Boutique independente especializada em reestruturação financeira, turnaround e situações especiais para empresas middle e large corporate. +7bi em transações conduzidas.",
+  isPartOf: { "@id": "https://oriapartners.com/#website" },
+  about: { "@id": "https://oriapartners.com/#organization" },
+};
+
+const IndexPage = () => {
+  useSEO({
+    title: "Oria Partners — Reestruturação Financeira e Turnaround | São Paulo",
+    description:
+      "Boutique independente especializada em reestruturação financeira, turnaround e situações especiais. +7bi em transações conduzidas. +40 grupos econômicos atendidos. São Paulo.",
+    canonical: "https://oriapartners.com/",
+    schema: SCHEMA_HOME,
+  });
+
+  useEffect(() => {
+    const els = document.querySelectorAll<HTMLElement>(".reveal");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("visible");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <Numeros />
+        <Sobre />
+        <QuandoBuscar />
+        <Diferenciais />
+        <Contato />
+      </main>
+      <Footer />
+    </>
+  );
+};
+
+export default IndexPage;

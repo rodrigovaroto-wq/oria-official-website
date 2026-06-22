@@ -1,0 +1,52 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# ═══ NOTE: redirect www ↔ não-www deve ser configurado no painel Netlify
+# em Site Settings > Domain Management > Primary domain.
+# O netlify.toml NÃO suporta "from" com protocolo absoluto (https://).
+# Usar protocolo no "from" quebra o SSL e causa erro de privacidade no browser.
+
+# SPA fallback — todas as rotas servem o index.html
+# Sem isso o Google recebe 404 ao rastrear /atuacao, /socios, /casos
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
+
+# ═══ CACHE: assets estáticos ══════════════════════════════════════════
+
+# Cache longo para assets com hash (JS, CSS gerados pelo Vite)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Vídeo do hero — cache médio (asset grande, muda raramente)
+[[headers]]
+  for = "/hero-bg.webm"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# Imagem OG — cache médio
+[[headers]]
+  for = "/og-image.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# Sem cache para o index.html — garante que o Google sempre leia a versão mais recente
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Cache curto para sitemap e robots (atualizam esporadicamente)
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
