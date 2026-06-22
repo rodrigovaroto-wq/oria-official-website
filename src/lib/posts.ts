@@ -2,6 +2,7 @@ export interface Post {
   slug: string;
   title: string;
   description: string;
+  summary_full?: string;
   date: string; // ISO YYYY-MM-DD
   category: string;
   source_name?: string;
@@ -44,6 +45,7 @@ const allPosts: Post[] = Object.entries(modules)
       slug: data.slug || fallbackSlug,
       title: data.title || "",
       description: data.description || "",
+      summary_full: data.summary_full || undefined,
       date: data.date || "1970-01-01",
       category: data.category || "",
       source_name: data.source_name || undefined,

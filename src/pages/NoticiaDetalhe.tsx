@@ -11,7 +11,8 @@ const NoticiaDetalhePage = () => {
   const { slug = "" } = useParams<{ slug: string }>();
   const post = getPostBySlug(slug);
 
-  const html = useMemo(() => (post ? marked.parse(post.body) as string : ""), [post]);
+  const longText = post?.summary_full || post?.body || post?.description || "";
+  const html = useMemo(() => (longText ? marked.parse(longText) as string : ""), [longText]);
 
   useSEO({
     title: post ? `${post.title} — Oria Partners` : "Notícia — Oria Partners",
@@ -75,7 +76,7 @@ const NoticiaDetalhePage = () => {
             )}
           </div>
 
-          <h1 className="mt-10 font-serif-display font-light leading-[1.1] tracking-[-0.02em] text-foreground text-[clamp(28px,5vw,48px)]">
+          <h1 className="mt-10 font-bold leading-[1.1] tracking-[-0.02em] text-foreground text-[clamp(28px,5vw,48px)]">
             {post.title}
           </h1>
 
@@ -89,17 +90,28 @@ const NoticiaDetalhePage = () => {
           />
 
           {post.source_name && post.source_url && (
-            <p className="mt-12 pt-6 border-t border-rule text-[14px] text-muted">
-              Fonte:{" "}
+            <div className="mt-12 pt-6 border-t border-rule">
+              <p className="text-[14px] text-muted">
+                Fonte:{" "}
+                <a
+                  href={post.source_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  {post.source_name}
+                </a>
+              </p>
               <a
                 href={post.source_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent hover:underline"
+                className="mt-3 inline-flex items-center gap-1 text-[14px] text-accent hover:translate-x-[2px] transition-transform"
+                style={{ color: "#9B3A2F" }}
               >
-                {post.source_name}
+                Ver notícia completa →
               </a>
-            </p>
+            </div>
           )}
         </article>
       </main>

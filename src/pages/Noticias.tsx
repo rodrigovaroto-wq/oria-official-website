@@ -63,7 +63,7 @@ const NoticiasPage = () => {
     <>
       <Nav />
       <main className="pt-32 md:pt-40 bg-background">
-        <section className="py-16 md:py-24">
+        <section className="py-4 md:py-6">
           <div className="container-oria">
             <SectionHeader
               num="§ NEWS"
@@ -76,7 +76,7 @@ const NoticiasPage = () => {
             />
 
             {/* Filter bar */}
-            <div className="mb-10 grid gap-4 md:grid-cols-[1fr_auto_auto] md:items-end">
+            <div className="-mt-8 md:-mt-16 mb-10 grid gap-4 md:grid-cols-[1fr_auto_auto] md:items-end">
               <div>
                 <label className="font-mono-label text-[10px] text-muted block mb-2">
                   {labels.search}
@@ -117,7 +117,7 @@ const NoticiasPage = () => {
               <p className="py-20 text-center text-ink-soft">{labels.empty}</p>
             ) : (
               <>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 grid-cols-2 lg:grid-cols-3">
                   {visiblePosts.map((p) => (
                     <NoticiaCard key={p.slug} post={p} />
                   ))}
