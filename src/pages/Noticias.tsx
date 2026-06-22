@@ -117,7 +117,7 @@ const NoticiasPage = () => {
               <p className="py-20 text-center text-ink-soft">{labels.empty}</p>
             ) : (
               <>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 grid-cols-2 lg:grid-cols-3">
                   {visiblePosts.map((p) => (
                     <NoticiaCard key={p.slug} post={p} />
                   ))}
