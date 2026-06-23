@@ -90,27 +90,29 @@ const NoticiaDetalhePage = () => {
           />
 
           {post.source_name && post.source_url && (
-            <div className="mt-12 pt-6 border-t border-rule">
-              <p className="text-[14px] text-muted">
-                Fonte:{" "}
-                <a
-                  href={post.source_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  {post.source_name}
-                </a>
-              </p>
+            <div className="mt-12">
               <a
                 href={post.source_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1 text-[14px] text-accent hover:translate-x-[2px] transition-transform"
+                className="inline-flex items-center gap-1 text-[14px] hover:translate-x-[2px] transition-transform"
                 style={{ color: "#9B3A2F" }}
               >
                 Ver notícia completa →
               </a>
+              <div className="mt-6 pt-6 border-t border-rule">
+                <p className="text-[14px] text-muted">
+                  Fonte:{" "}
+                  <a
+                    href={post.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:underline"
+                  >
+                    {post.source_name}
+                  </a>
+                </p>
+              </div>
             </div>
           )}
         </article>
