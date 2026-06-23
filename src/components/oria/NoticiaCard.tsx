@@ -8,9 +8,9 @@ interface Props {
 export const NoticiaCard = ({ post }: Props) => {
   const to = `/noticias/${post.slug}`;
   return (
-    <article className="group flex flex-col bg-[hsl(0_0%_100%)] shadow-[0_2px_14px_rgba(15,20,25,0.06)] hover:shadow-[0_6px_24px_rgba(15,20,25,0.10)] transition-shadow duration-300 overflow-hidden rounded-[4px] border border-rule/70">
+    <article className="group flex flex-col bg-[hsl(0_0%_100%)] shadow-[0_2px_14px_rgba(15,20,25,0.06)] hover:shadow-[0_6px_24px_rgba(15,20,25,0.10)] transition-shadow duration-300 overflow-hidden rounded-[4px] border border-rule/70 h-full">
       <Link to={to} className="block" aria-label={post.title}>
-        <div className="h-[180px] w-full overflow-hidden">
+        <div className="aspect-video w-full overflow-hidden">
           {post.image ? (
             <img
               src={post.image}
@@ -28,24 +28,24 @@ export const NoticiaCard = ({ post }: Props) => {
         </div>
       </Link>
 
-      <div className="flex flex-col flex-1 p-6">
+      <div className="flex flex-col flex-1 p-3 md:p-6">
         <Link to={to}>
-          <h3 className="text-[20px] leading-[1.25] tracking-[-0.01em] text-foreground font-bold line-clamp-3 group-hover:text-accent transition-colors">
+          <h3 className="text-[clamp(14px,2.4vw,20px)] leading-[1.25] tracking-[-0.01em] text-foreground font-bold group-hover:text-accent transition-colors">
             {post.title}
           </h3>
         </Link>
 
-        <div className="my-4 h-px bg-rule" />
+        <div className="my-3 md:my-4 h-px bg-rule" />
 
-        <p className="text-[14.5px] leading-[1.55] text-ink-soft font-light line-clamp-3">
+        <p className="text-[clamp(12px,1.8vw,14.5px)] leading-[1.5] text-ink-soft font-light">
           {post.description}
         </p>
 
-        <div className="my-4 h-px bg-rule" />
+        <div className="my-3 md:my-4 h-px bg-rule" />
 
         <Link
           to={to}
-          className="mt-auto inline-flex items-center gap-1 text-[13px] tracking-[0.02em] text-accent hover:translate-x-[2px] transition-transform self-start"
+          className="mt-auto inline-flex items-center gap-1 text-[clamp(11px,1.6vw,13px)] tracking-[0.02em] text-accent hover:translate-x-[2px] transition-transform self-start"
         >
           Ler mais →
         </Link>
@@ -53,3 +53,4 @@ export const NoticiaCard = ({ post }: Props) => {
     </article>
   );
 };
+
