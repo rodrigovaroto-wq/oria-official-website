@@ -149,6 +149,19 @@
     border-color: hsl(var(--accent));
     color: hsl(var(--accent-foreground));
   }
+  .btn-cta-compact {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-[13px] font-medium border transition-all duration-300;
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    border-color: hsl(var(--accent));
+    letter-spacing: 0.02em;
+    cursor: pointer;
+  }
+  .btn-cta-compact:hover {
+    background: hsl(var(--foreground));
+    border-color: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
 }
 
 @keyframes fadeUp {
