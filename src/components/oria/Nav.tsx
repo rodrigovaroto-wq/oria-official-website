@@ -207,6 +207,24 @@ export const Nav = () => {
                 </li>
               );
             })}
+            <li>
+              <a
+                href={location.pathname === "/" ? "#contato" : "/#contato"}
+                onClick={(e) => {
+                  setOpen(false);
+                  if (location.pathname === "/") {
+                    e.preventDefault();
+                    setTimeout(() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" }), 50);
+                  }
+                }}
+                className={`inline-flex mt-6 btn-cta-compact transition-all duration-500 ${
+                  open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
+                style={{ transitionDelay: open ? `${100 + NAV_LINKS.length * 35}ms` : "0ms" }}
+              >
+                {lang === "en" ? "Contact" : "Contato"}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
