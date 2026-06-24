@@ -64,7 +64,7 @@ export const Hero = () => {
           {UI.hero.h1Lines.map((line, i) => (
             <span key={i}>
               {line.italic ? (
-                <em className="not-italic italic font-bold text-accent-soft" style={{ fontWeight: 700 }}>{line.text}</em>
+                <em className="not-italic font-bold text-white" style={{ fontWeight: 700, fontStyle: "normal" }}>{line.text}</em>
               ) : (
                 line.text
               )}
@@ -89,7 +89,7 @@ export const Hero = () => {
           </a>
         </div>
 
-        <p className="font-serif-display italic font-light text-[#F0EDE6] animate-fade-up [animation-delay:.7s]"
+        <p className="not-italic font-light text-[#F0EDE6] animate-fade-up [animation-delay:.7s]"
           style={{ fontSize: "0.75rem", lineHeight: 1.5 }}
         >
           {UI.hero.note}

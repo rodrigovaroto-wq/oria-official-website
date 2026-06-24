@@ -90,7 +90,7 @@ export const Nav = () => {
           </Link>
 
           {/* Desktop inline links */}
-          <div className="hidden lg:flex items-center gap-14">
+          <div className="hidden lg:flex items-center gap-10">
             {NAV_LINKS.map((l) => {
               const Comp: any = l.external ? Link : "a";
               const props: any = l.external ? { to: l.href } : { href: l.href };
@@ -99,18 +99,26 @@ export const Nav = () => {
                   key={l.href}
                   {...props}
                   onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, l)}
-                  className={`text-[17px] tracking-[0.04em] transition-colors hover:text-accent ${
-                    transparent
-                      ? "text-white"
-                      : l.external
-                        ? "text-accent"
-                        : "text-foreground"
+                  className={`text-[15px] tracking-[0.02em] transition-colors hover:text-accent ${
+                    transparent ? "text-white" : "text-foreground"
                   }`}
                 >
                   {l.label}
                 </Comp>
               );
             })}
+            <a
+              href={location.pathname === "/" ? "#contato" : "/#contato"}
+              onClick={(e) => {
+                if (location.pathname === "/") {
+                  e.preventDefault();
+                  document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="btn-cta-compact"
+            >
+              {lang === "en" ? "Contact" : "Contato"}
+            </a>
           </div>
 
           <div className="flex items-center gap-3 sm:gap-6 shrink-0">
@@ -199,6 +207,24 @@ export const Nav = () => {
                 </li>
               );
             })}
+            <li>
+              <a
+                href={location.pathname === "/" ? "#contato" : "/#contato"}
+                onClick={(e) => {
+                  setOpen(false);
+                  if (location.pathname === "/") {
+                    e.preventDefault();
+                    setTimeout(() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" }), 50);
+                  }
+                }}
+                className={`inline-flex mt-6 btn-cta-compact transition-all duration-500 ${
+                  open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
+                style={{ transitionDelay: open ? `${100 + NAV_LINKS.length * 35}ms` : "0ms" }}
+              >
+                {lang === "en" ? "Contact" : "Contato"}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
