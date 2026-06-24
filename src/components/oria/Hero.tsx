@@ -89,7 +89,7 @@ export const Hero = () => {
           </a>
         </div>
 
-        <p className="font-serif-display italic font-light text-[#F0EDE6] animate-fade-up [animation-delay:.7s]"
+        <p className="not-italic font-light text-[#F0EDE6] animate-fade-up [animation-delay:.7s]"
           style={{ fontSize: "0.75rem", lineHeight: 1.5 }}
         >
           {UI.hero.note}
