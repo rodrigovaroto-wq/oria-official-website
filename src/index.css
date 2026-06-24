@@ -98,12 +98,12 @@
 
 @layer utilities {
   .font-serif-display {
-    font-family: 'Fraunces', 'Times New Roman', serif;
-    font-variation-settings: "opsz" 144;
+    font-family: inherit;
+    font-style: normal;
   }
   .font-mono-label {
-    font-family: 'JetBrains Mono', monospace;
-    letter-spacing: 0.22em;
+    font-family: inherit;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
   }
   .container-oria {
