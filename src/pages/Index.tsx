@@ -53,10 +53,10 @@ const IndexPage = () => {
       <Nav />
       <main>
         <Hero />
-        <Numeros />
         <Sobre />
-        <QuandoBuscar />
+        <Numeros />
         <Diferenciais />
+        <QuandoBuscar />
         <NoticiasHome />
         <Contato />
       </main>
