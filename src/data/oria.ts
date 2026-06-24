@@ -22,14 +22,14 @@ const NAV_EN: NavLink[] = [
 
 // ============ NÚMEROS ============
 const NUMEROS_PT = [
-  { prefix: "+", value: "38", suffix: "", label: "Anos de experiência acumulada pelos sócios" },
-  { prefix: "+", value: "7", suffix: "bi", label: "Em transações e reestruturações conduzidas" },
-  { prefix: "+", value: "40", suffix: "", label: "Grupos econômicos atendidos" },
+  { prefix: "", value: 38, suffix: "+", label: "Anos de experiência acumulada pelos sócios" },
+  { prefix: "R$ ", value: 7, suffix: "Bi +", label: "Em transações e reestruturações conduzidas" },
+  { prefix: "", value: 40, suffix: "+", label: "Grupos econômicos atendidos" },
 ];
 const NUMEROS_EN = [
-  { prefix: "+", value: "38", suffix: "", label: "Years of experience accumulated by the partners" },
-  { prefix: "+", value: "7", suffix: "bn", label: "In transactions and restructurings advised" },
-  { prefix: "+", value: "40", suffix: "", label: "Economic groups advised" },
+  { prefix: "", value: 38, suffix: "+", label: "Years of experience accumulated by the partners" },
+  { prefix: "R$ ", value: 7, suffix: "Bn +", label: "In transactions and restructurings advised" },
+  { prefix: "", value: 40, suffix: "+", label: "Economic groups advised" },
 ];
 
 // ============ SOBRE ============
