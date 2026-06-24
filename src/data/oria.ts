@@ -55,146 +55,30 @@ const SOBRE_EN = {
 // ============ GATILHOS ============
 const GATILHOS_PT = [
   {
-    mark: "I.",
-    title: "Pressão ou insegurança por parte dos credores",
-    desc: "Quando a relação com o mercado de crédito chega ao limite e o tempo começa a trabalhar contra.",
-    italicSuffix: "Quanto antes agir, mais saídas existirão.",
-    bullets: [
-      "Dívidas concentradas no curto prazo",
-      "Geração de caixa incompatível com as obrigações financeiras",
-      "Descrença por parte dos credores",
-      "Elevação dos spreads bancários ou dificuldade para novas captações",
-    ],
-  },
-  {
-    mark: "II.",
-    title: "Desalinhamento entre sócios",
-    desc: "Quando o conflito interno paralisa decisões que não podem esperar.",
-    italicSuffix: "Ter um trusted advisor pode reduzir a insegurança e trazer isenção à tomada de decisões.",
-    bullets: [
-      "Visões irreconciliáveis sobre o futuro ou falta de um diagnóstico realista",
-      "Decisões críticas paradas há meses por insegurança com o planejamento ou sua execução",
-      "Descrença e/ou dificuldade em transmitir as informações necessárias ao Board e executivos",
-      "Desgovernança sem mediação efetiva ou desalinhamento de esforços",
-    ],
-  },
-  {
-    mark: "III.",
-    title: "Transações sob pressão de tempo ou liquidez",
-    desc: "Quando a janela de tempo para agir é curta e errar tem custo irreversível.",
-    italicSuffix: "Conduzir o processo com método preserva valor e evita acordos ruins feitos sob pressão.",
-    bullets: [
-      "Necessidade de venda de ativos no curto prazo, sem destinação eficaz de recursos",
-      "Captação em ambiente restritivo e com condições prejudiciais a todos",
-      "Desinvestimento de ativo core com destruição da capacidade de recuperação no médio prazo",
-      "Tomada de ações de forma desmedida ou contra o interesse da companhia",
-    ],
-  },
-  {
-    mark: "IV.",
     title: "Deterioração sem diagnóstico claro",
-    desc: "Quando os números pioram mas a causa real ainda não está identificada e resolvida.",
-    italicSuffix: "Os melhores diagnósticos vêm de uma visão independente.",
-    bullets: [
-      "Quedas de margem",
-      "Perda de previsibilidade de caixa",
-      "Múltiplas causas se sobrepondo",
-      "Orçamentos não críveis, sem efeito e/ou constantemente descumpridos",
-    ],
+    desc: "Os números pioram e a causa real ainda não está clara.",
   },
   {
-    mark: "V.",
-    title: "Gestão interina e reforço executivo",
-    desc: "Quando a operação precisa de capacidade técnica sênior de forma imediata.",
-    bullets: [
-      "CFO interino em transição crítica",
-      "Coordenador de reestruturação dedicado",
-      "Reforço de governança em crise",
-      "Liderança temporária de turnaround",
-    ],
+    title: "Pressão por parte dos credores",
+    desc: "A relação com o crédito chega ao limite e o tempo trabalha contra.",
   },
   {
-    mark: "VI.",
-    title: "Exposições críticas de credores e investidores",
-    desc: "Quando a posição já está comprometida e a próxima decisão define o desfecho.",
-    bullets: [
-      "Exposição em devedor sob estresse",
-      "Necessidade de mediação entre credores",
-      "Monitoramento de plano de reestruturação",
-      "Avaliação independente de alternativas",
-    ],
+    title: "Transações sob pressão de liquidez",
+    desc: "A janela para agir é curta e errar tem custo irreversível.",
   },
 ];
 const GATILHOS_EN = [
   {
-    mark: "I.",
-    title: "Pressure or insecurity from creditors",
-    desc: "When the relationship with the credit market reaches its limit and time starts working against you.",
-    italicSuffix: "The earlier you act, the more options remain.",
-    bullets: [
-      "Debt concentrated in the short term",
-      "Cash generation incompatible with financial obligations",
-      "Loss of confidence among creditors",
-      "Higher banking spreads or difficulty raising new funding",
-    ],
-  },
-  {
-    mark: "II.",
-    title: "Misalignment among shareholders",
-    desc: "When internal conflict paralyzes decisions that cannot wait.",
-    italicSuffix: "Having a trusted advisor can reduce uncertainty and bring impartiality to decision-making.",
-    bullets: [
-      "Irreconcilable views on the future or lack of a realistic diagnosis",
-      "Critical decisions stalled for months due to insecurity with the plan or its execution",
-      "Disbelief and/or difficulty conveying the necessary information to the Board and executives",
-      "Governance breakdown without effective mediation or misaligned efforts",
-    ],
-  },
-  {
-    mark: "III.",
-    title: "Transactions under time or liquidity pressure",
-    desc: "When the window to act is short and getting it wrong has irreversible cost.",
-    italicSuffix: "Conducting the process with method preserves value and avoids weak deals signed under pressure.",
-    bullets: [
-      "Need to sell assets in the short term, without effective allocation of proceeds",
-      "Fundraising in a restrictive environment with conditions harmful to all",
-      "Divestment of a core asset, destroying medium-term recovery capacity",
-      "Disproportionate actions or actions against the company's interest",
-    ],
-  },
-  {
-    mark: "IV.",
     title: "Deterioration without a clear diagnosis",
-    desc: "When the numbers worsen but the real cause has not yet been identified and addressed.",
-    italicSuffix: "The best diagnoses come from an independent perspective.",
-    bullets: [
-      "Margin compression",
-      "Loss of cash flow predictability",
-      "Multiple overlapping causes",
-      "Budgets that lack credibility, have no impact and/or are constantly missed",
-    ],
+    desc: "The numbers worsen and the real cause is not yet clear.",
   },
   {
-    mark: "V.",
-    title: "Interim management and executive reinforcement",
-    desc: "When the operation needs senior technical capacity immediately.",
-    bullets: [
-      "Interim CFO in critical transitions",
-      "Dedicated restructuring coordinator",
-      "Governance reinforcement in crisis",
-      "Temporary turnaround leadership",
-    ],
+    title: "Pressure from creditors",
+    desc: "The credit relationship reaches its limit and time works against you.",
   },
   {
-    mark: "VI.",
-    title: "Critical exposures of creditors and investors",
-    desc: "When the position is already compromised and the next decision defines the outcome.",
-    bullets: [
-      "Exposure to a distressed obligor",
-      "Need for mediation among creditors",
-      "Monitoring of a restructuring plan",
-      "Independent assessment of alternatives",
-    ],
+    title: "Transactions under liquidity pressure",
+    desc: "The window to act is short and getting it wrong has irreversible cost.",
   },
 ];
 const PILARES_PT = [
