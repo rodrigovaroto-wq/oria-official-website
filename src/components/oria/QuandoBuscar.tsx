@@ -10,15 +10,17 @@ export const QuandoBuscar = () => {
       className="py-14 md:py-16"
     >
       <div className="container-oria">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14 items-start">
-          <div className="md:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-start">
+          <div>
             <div className="font-mono-label text-[11px] mb-5" style={{ color: "#F6F4EE" }}>
               {UI.quandoBuscar.num}
             </div>
             <h2 className="font-medium tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-7" style={{ color: "#F6F4EE" }}>
               {UI.quandoBuscar.headingA}
               <br />
-              {UI.quandoBuscar.headingB}
+              <span className="underline underline-offset-[6px] decoration-[1px]">
+                {UI.quandoBuscar.headingB}
+              </span>
             </h2>
             <a href="#contato" className="btn-inverted">
               {UI.quandoBuscar.cta}
@@ -26,13 +28,17 @@ export const QuandoBuscar = () => {
             </a>
           </div>
 
-          <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="flex flex-col">
             {GATILHOS.map((g) => (
-              <div key={g.title} className="border-t pt-5" style={{ borderColor: "rgba(246,244,238,0.2)" }}>
-                <h4 className="font-medium text-[15px] md:text-[16px] leading-snug mb-3" style={{ color: "#F6F4EE" }}>
+              <div
+                key={g.title}
+                className="py-5 first:pt-0"
+                style={{ borderBottom: "1px solid rgba(246,244,238,0.18)" }}
+              >
+                <h4 className="font-semibold text-[16px] md:text-[17px] leading-snug mb-2" style={{ color: "#F6F4EE" }}>
                   {g.title}
                 </h4>
-                <p className="text-[13.5px] md:text-[14px] leading-[1.55]" style={{ color: "#F6F4EE", opacity: 0.78 }}>
+                <p className="text-[14px] md:text-[14.5px] leading-[1.55]" style={{ color: "#F6F4EE", opacity: 0.78 }}>
                   {g.desc}
                 </p>
               </div>
