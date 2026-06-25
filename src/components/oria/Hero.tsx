@@ -49,7 +49,7 @@ export const Hero = () => {
     </video>
 
     <div
-      className="w-full relative px-6 md:px-20 flex flex-col"
+      className="container-oria w-full relative flex flex-col"
       style={{
         zIndex: 2,
         marginTop: "80px",

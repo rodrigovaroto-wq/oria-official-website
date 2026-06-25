@@ -46,13 +46,13 @@ export const Numeros = () => {
       ref={ref}
       aria-label={UI.numeros.label}
       style={{ backgroundColor: "#11161D", color: "#F6F4EE" }}
-      className="py-20 md:py-28"
+      className="py-12 md:py-16"
     >
       <div className="container-oria">
-        <h2 className="font-medium text-[clamp(24px,3.5vw,38px)] tracking-tight mb-14 md:mb-20">
+        <h2 className="section-title-indent font-medium text-[clamp(22px,3vw,32px)] tracking-tight mb-10 md:mb-12" style={{ color: "#F6F4EE" }}>
           {UI.numeros.label}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 justify-items-center text-center">
           {NUMEROS.map((n, i) => (
             <NumeroItem key={i} item={n} start={start} />
           ))}
@@ -71,13 +71,14 @@ const NumeroItem = ({
 }) => {
   const v = useCountUp(item.value, 1500, start);
   return (
-    <div>
-      <div className="font-bold leading-none tracking-tight text-[clamp(48px,6vw,76px)] mb-5" style={{ color: "#F6F4EE" }}>
+    <div className="flex flex-col items-center max-w-[280px]">
+      <span aria-hidden="true" className="block h-px w-16 mb-5" style={{ backgroundColor: "#C0492E" }} />
+      <div className="font-bold leading-none tracking-tight text-[clamp(44px,5.5vw,68px)] mb-4" style={{ color: "#F6F4EE" }}>
         {item.prefix}
         {v}
         {item.suffix}
       </div>
-      <div className="text-[16px] md:text-[17px] leading-[1.5]" style={{ color: "#F6F4EE", opacity: 0.85 }}>
+      <div className="text-[15px] md:text-[16px] leading-[1.5]" style={{ color: "#F6F4EE", opacity: 0.85 }}>
         {item.label}
       </div>
     </div>

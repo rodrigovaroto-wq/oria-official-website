@@ -17,7 +17,7 @@ export const NoticiasHome = () => {
   return (
     <section id="noticias" className="bg-background py-20 md:py-28">
       <div className="container-oria">
-        <div className="mb-12 reveal max-w-[820px]">
+        <div className="mb-12 reveal max-w-[820px] section-title-indent">
           <div className="font-mono-label text-[11px] text-muted mb-5">{label}</div>
           <h2 className="text-foreground font-medium text-[clamp(26px,4vw,42px)] tracking-tight leading-[1.15]">
             {heading}
