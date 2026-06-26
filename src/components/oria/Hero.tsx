@@ -8,9 +8,9 @@ export const Hero = () => {
     id="hero"
     className="hero relative overflow-hidden w-full flex flex-col justify-center"
     style={{
-      height: "100dvh",
-      minHeight: "100dvh",
-      maxHeight: "100dvh",
+      height: "calc(100dvh - 64px)",
+      minHeight: "calc(100dvh - 64px)",
+      maxHeight: "calc(100dvh - 64px)",
       backgroundColor: "#000",
     }}
   >
