@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Post } from "@/lib/posts";
+import { getCategoryLabel } from "@/lib/categoryMap";
 
 interface Props {
   post: Post;
@@ -7,6 +8,7 @@ interface Props {
 
 export const NoticiaCard = ({ post }: Props) => {
   const to = `/noticias/${post.slug}`;
+  const categoryLabel = getCategoryLabel(post.category);
   return (
     <article className="group flex flex-col bg-[hsl(0_0%_100%)] shadow-[0_2px_14px_rgba(15,20,25,0.06)] hover:shadow-[0_6px_24px_rgba(15,20,25,0.10)] transition-shadow duration-300 overflow-hidden rounded-[4px] border border-rule/70 h-full">
       <Link to={to} className="block" aria-label={post.title}>
@@ -21,7 +23,7 @@ export const NoticiaCard = ({ post }: Props) => {
           ) : (
             <div className="h-full w-full bg-foreground flex items-center justify-center">
               <span className="font-mono-label text-[11px] text-background">
-                {post.category}
+                {categoryLabel}
               </span>
             </div>
           )}
@@ -43,14 +45,24 @@ export const NoticiaCard = ({ post }: Props) => {
 
         <div className="my-3 md:my-4 h-px bg-rule" />
 
-        <Link
-          to={to}
-          className="mt-auto inline-flex items-center gap-1 text-[clamp(11px,1.6vw,13px)] tracking-[0.02em] text-accent hover:translate-x-[2px] transition-transform self-start"
-        >
-          Ler mais →
-        </Link>
+        {/* Ler mais + badge de categoria */}
+        <div className="mt-auto flex items-center justify-between gap-2">
+          <Link
+            to={to}
+            className="inline-flex items-center gap-1 text-[clamp(11px,1.6vw,13px)] tracking-[0.02em] text-accent hover:translate-x-[2px] transition-transform font-bold"
+          >
+            Ler mais →
+          </Link>
+          {categoryLabel && (
+            <span
+              className="text-[10px] font-bold tracking-[0.06em] uppercase px-2 py-[3px] rounded-[3px]"
+              style={{ color: "#C0492E", backgroundColor: "rgba(192,73,46,0.10)" }}
+            >
+              {categoryLabel}
+            </span>
+          )}
+        </div>
       </div>
     </article>
   );
 };
-

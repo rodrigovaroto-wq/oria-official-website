@@ -4,6 +4,7 @@ import { marked } from "marked";
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { getPostBySlug, formatDatePtBr } from "@/lib/posts";
+import { getCategoryLabel } from "@/lib/categoryMap";
 import { useSEO } from "@/hooks/useSEO";
 import NotFound from "./NotFound";
 
@@ -13,6 +14,8 @@ const NoticiaDetalhePage = () => {
 
   const longText = post?.summary_full || post?.body || post?.description || "";
   const html = useMemo(() => (longText ? marked.parse(longText) as string : ""), [longText]);
+
+  const categoryLabel = getCategoryLabel(post?.category);
 
   useSEO({
     title: post ? `${post.title} — Oria Partners` : "Notícia — Oria Partners",
@@ -71,7 +74,7 @@ const NoticiaDetalhePage = () => {
               <img src={post.image} alt={post.title} className="h-full w-full object-cover" loading="lazy" />
             ) : (
               <div className="h-full w-full bg-foreground flex items-center justify-center">
-                <span className="font-mono-label text-[12px] text-background">{post.category}</span>
+                <span className="font-mono-label text-[12px] text-background">{categoryLabel || post.category}</span>
               </div>
             )}
           </div>
@@ -83,6 +86,18 @@ const NoticiaDetalhePage = () => {
           <div className="mt-4 font-mono-label text-[11px] text-muted">
             {formatDatePtBr(post.date)}
           </div>
+
+          {/* Badge de categoria abaixo da data */}
+          {categoryLabel && (
+            <div className="mt-3">
+              <span
+                className="inline-block text-[11px] font-bold tracking-[0.07em] uppercase px-3 py-[4px] rounded-[3px]"
+                style={{ color: "#C0492E", backgroundColor: "rgba(192,73,46,0.10)" }}
+              >
+                {categoryLabel}
+              </span>
+            </div>
+          )}
 
           <div
             className="mt-10 prose prose-neutral max-w-none text-[17px] leading-[1.7] text-ink-soft font-light [&_p]:mb-5 [&_a]:text-accent [&_a]:underline [&_h2]:font-serif-display [&_h2]:text-[28px] [&_h2]:mt-10 [&_h2]:mb-4 [&_h3]:font-serif-display [&_h3]:text-[22px] [&_h3]:mt-8 [&_h3]:mb-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-5 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-5"
