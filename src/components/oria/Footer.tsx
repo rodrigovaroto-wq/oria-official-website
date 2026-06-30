@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useContent } from "@/data/oria";
 
 export const Footer = () => {
-  const { UI, NAV } = useContent();
+  const { UI, NAV_LINKS } = useContent();
   return (
     <footer className="bg-foreground text-background/70 pt-8 pb-6 border-t border-background/12 text-[13px]">
       <div className="container-oria">
@@ -27,7 +27,7 @@ export const Footer = () => {
             >
               {UI.footer.privacy}
             </Link>
-            {NAV.map((link) => (
+            {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
