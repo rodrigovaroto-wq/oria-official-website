@@ -65,21 +65,15 @@ export const Contato = () => {
 
   const labelCls = "font-mono-label text-[10px] text-background/50 block mb-2";
 
-  /*
-   * Coordenadas precisas do lote: Rua do Rocio 288, Vila Olímpia
-   * lat=-23.59365, lng=-46.68868
-   * ll e q com o mesmo ponto garante o pin centralizado no iframe.
-   * zoom=16 mantido conforme solicitado.
-   */
   const MAP_SRC =
     "https://maps.google.com/maps" +
-    "?q=-23.59365,-46.68868" +
-    "&ll=-23.59365,-46.68868" +
+    "?q=Rua+do+Rocio+288,+Vila+Ol%C3%ADmpia,+S%C3%A3o+Paulo" +
+    "&ll=-23.5935,-46.6887" +
     "&z=16" +
     "&t=m" +
     "&ie=UTF8" +
-    "&iwloc=B" +
-    "&output=embed";
+    "&iwloc=&" +
+    "output=embed";
 
   return (
     <section id="contato" className="bg-foreground text-background">
