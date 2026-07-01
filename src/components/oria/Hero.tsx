@@ -55,10 +55,9 @@ export const Hero = () => {
           style={{ lineHeight: 1.18, marginBottom: "14px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
         >
           <span className="md:hidden">
-            Especialistas em Reestruturação<br />
-            Corporativa, contemplando<br />
-            <em className="not-italic">reorganização administrativa,</em><br />
-            <em className="not-italic">financeira, operacional ou&#160;</em><br />
+            Especialistas em Reestruturação Corporativa, contemplando&#160;
+            <em className="not-italic">reorganização administrativa,&#160;</em>
+            <em className="not-italic">financeira, operacional ou&#160;</em>
             <em className="not-italic">societária de empresas</em>
           </span>
           <span className="hidden md:inline">
