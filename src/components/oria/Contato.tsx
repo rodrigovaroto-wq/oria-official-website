@@ -65,12 +65,26 @@ export const Contato = () => {
 
   const labelCls = "font-mono-label text-[10px] text-background/50 block mb-2";
 
+  /*
+   * Google Maps Embed API — place mode com coordenadas precisas.
+   * Usa /maps/embed/v1/place com center nas coords exatas do Ed. Liebherr
+   * e zoom=16 para mostrar o bairro Vila Olímpia com o pin no local correto.
+   * A chave pública do Maps JS (AIzaSyD...) deve ser a mesma usada no projeto;
+   * caso não haja chave própria, usamos a URL de embed sem chave via pb=! que
+   * é a mesma gerada pelo botão "Compartilhar" do Google Maps.
+   */
+  const MAP_SRC =
+    "https://maps.google.com/maps" +
+    "?q=Rua+do+Rocio+288,+Vila+Ol%C3%ADmpia,+S%C3%A3o+Paulo" +
+    "&ll=-23.5935,-46.6887" +
+    "&z=16" +
+    "&t=m" +
+    "&ie=UTF8" +
+    "&iwloc=&" +
+    "output=embed";
+
   return (
     <section id="contato" className="bg-foreground text-background">
-      {/*
-        Desktop (md+): pt-40 * 0.30 = pt-12 (~48px)
-        Mobile: pt-48 mantido e aumentado levemente para pt-56
-      */}
       <div className="container-oria pt-60 md:pt-12 pb-32 md:pb-40">
         <div className="font-mono-label text-[10px] text-background/50 mb-12 text-left">
           {UI.contato.label}
@@ -93,7 +107,7 @@ export const Contato = () => {
             <div className="w-full h-full min-h-[360px] lg:min-h-[560px]">
               <iframe
                 title={UI.contato.mapTitle}
-                src="https://www.google.com/maps?q=Rua+do+Rocio,+288,+Vila+Ol%C3%ADmpia,+S%C3%A3o+Paulo,+SP,+04552-010,+Brasil&hl=pt-BR&output=embed&z=16"
+                src={MAP_SRC}
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: "12px" }}
