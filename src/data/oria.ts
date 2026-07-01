@@ -465,8 +465,8 @@ export const UI = {
       h1a: "Especialistas em Reestruturação Corporativa, contemplando reorganização administrativa, financeira, operacional ou societária de empresas",
       h1b: "",
       h1Lines: [
-        { text: "Especialistas em Reestruturação\nCorporativa, contemplando\n" },
-        { text: "reorganização administrativa,\nfinanceira, operacional\u00a0ou societária\u00a0\nde empresas\u00a0", italic: true },
+        { text: "Especialistas em Reestruturação Corporativa, contemplando\u00a0" },
+        { text: "reorganização administrativa,\u00a0financeira, operacional ou\u00a0societária de empresas", italic: true },
       ],
       lead: "assessoria financeira independente · portfólio de soluções verticalizado",
       cta: "Conversar com um sócio",
