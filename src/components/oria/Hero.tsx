@@ -26,6 +26,16 @@ export const Hero = () => {
     return () => v.removeEventListener("canplay", attempt);
   }, []);
 
+  /* Estilo compartilhado para desativar text-wrap:balance do Tailwind base
+     e garantir que os <br /> sejam respeitados em ambas as versões. */
+  const headlineStyle: React.CSSProperties = {
+    textWrap: "unset" as never,
+    overflowWrap: "normal",
+    wordBreak: "normal",
+    hyphens: "none",
+    whiteSpace: "normal",
+  };
+
   return (
     <section
       id="hero"
@@ -64,19 +74,24 @@ export const Hero = () => {
 
       <div
         className="container-oria w-full relative flex flex-col"
-        style={{
-          zIndex: 2,
-          paddingTop: "116px",
-          paddingBottom: "32px",
-        }}
+        style={{ zIndex: 2, paddingTop: "116px", paddingBottom: "32px" }}
       >
         <div className="max-w-full">
           <h1
             className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full md:max-w-[90%]"
-            style={{ lineHeight: 1.18, marginBottom: "14px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
+            style={{
+              lineHeight: 1.18,
+              marginBottom: "14px",
+              fontWeight: 700,
+              /* Desativa text-wrap:balance que o Tailwind base injeta em h1 */
+              textWrap: "unset" as never,
+            }}
           >
-            {/* MOBILE — 1.51rem (era 1.58rem, -1pt) */}
-            <span className="md:hidden" style={{ fontSize: "1.51rem" }}>
+            {/* MOBILE — 1.51rem */}
+            <span
+              className="md:hidden"
+              style={{ ...headlineStyle, fontSize: "1.51rem", display: "block" }}
+            >
               Especialistas em Reestruturação<br />
               Corporativa, contemplando<br />
               reorganização administrativa,<br />
@@ -85,7 +100,10 @@ export const Hero = () => {
             </span>
 
             {/* DESKTOP */}
-            <span className="hidden md:inline" style={{ fontSize: "clamp(2.35rem, 3.2vw, 2.85rem)" }}>
+            <span
+              className="hidden md:block"
+              style={{ ...headlineStyle, fontSize: "clamp(2.35rem, 3.2vw, 2.85rem)" }}
+            >
               Especialistas em Reestruturação<br />
               Corporativa, contemplando reorganização<br />
               administrativa, financeira, operacional ou<br />
