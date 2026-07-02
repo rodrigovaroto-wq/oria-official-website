@@ -65,15 +65,16 @@ export const Contato = () => {
 
   const labelCls = "font-mono-label text-[10px] text-background/50 block mb-2";
 
+  /*
+   * Usando mode=place com zoom=15 para replicar exatamente a imagem de referência.
+   * q com coordenadas numéricas garante pin centralizado sem deslocamento de geocode.
+   * zoom=15 reproduz o enquadramento da imagem (Cidade Jardim até Vila Olímpia visível).
+   */
   const MAP_SRC =
-    "https://maps.google.com/maps" +
-    "?q=Rua+do+Rocio+288,+Vila+Ol%C3%ADmpia,+S%C3%A3o+Paulo" +
-    "&ll=-23.5935,-46.6887" +
-    "&z=16" +
-    "&t=m" +
-    "&ie=UTF8" +
-    "&iwloc=&" +
-    "output=embed";
+    "https://www.google.com/maps/embed/v1/place" +
+    "?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY" +
+    "&q=-23.59365,-46.68868" +
+    "&zoom=15";
 
   return (
     <section id="contato" className="bg-foreground text-background">
@@ -96,7 +97,7 @@ export const Contato = () => {
 
         <div className="grid lg:grid-cols-[40fr_60fr] gap-10 lg:gap-14 items-stretch">
           <div className="flex items-center">
-            <div className="w-full h-full min-h-[360px] lg:min-h-[560px]">
+            <div className="relative w-full h-full min-h-[360px] lg:min-h-[560px]">
               <iframe
                 title={UI.contato.mapTitle}
                 src={MAP_SRC}
