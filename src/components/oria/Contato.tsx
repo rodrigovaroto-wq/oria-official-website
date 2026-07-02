@@ -66,15 +66,20 @@ export const Contato = () => {
   const labelCls = "font-mono-label text-[10px] text-background/50 block mb-2";
 
   /*
-   * Usando mode=place com zoom=15 para replicar exatamente a imagem de referência.
-   * q com coordenadas numéricas garante pin centralizado sem deslocamento de geocode.
-   * zoom=15 reproduz o enquadramento da imagem (Cidade Jardim até Vila Olímpia visível).
+   * Endpoint sem API key (maps.google.com/maps?output=embed).
+   * q e ll com as mesmas coordenadas exatas garante pin centralizado.
+   * z=15 reproduz o zoom da imagem de referência (Cidade Jardim até Vila Olímpia).
+   * iwloc=B ancora o marcador no centro do iframe.
    */
   const MAP_SRC =
-    "https://www.google.com/maps/embed/v1/place" +
-    "?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY" +
-    "&q=-23.59365,-46.68868" +
-    "&zoom=15";
+    "https://maps.google.com/maps" +
+    "?q=-23.59365,-46.68868" +
+    "&ll=-23.59365,-46.68868" +
+    "&z=15" +
+    "&t=m" +
+    "&ie=UTF8" +
+    "&iwloc=B" +
+    "&output=embed";
 
   return (
     <section id="contato" className="bg-foreground text-background">
@@ -97,7 +102,7 @@ export const Contato = () => {
 
         <div className="grid lg:grid-cols-[40fr_60fr] gap-10 lg:gap-14 items-stretch">
           <div className="flex items-center">
-            <div className="relative w-full h-full min-h-[360px] lg:min-h-[560px]">
+            <div className="w-full h-full min-h-[360px] lg:min-h-[560px]">
               <iframe
                 title={UI.contato.mapTitle}
                 src={MAP_SRC}
