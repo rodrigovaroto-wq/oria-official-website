@@ -66,15 +66,15 @@ export const Contato = () => {
   const labelCls = "font-mono-label text-[10px] text-background/50 block mb-2";
 
   /*
-   * Endpoint sem API key (maps.google.com/maps?output=embed).
-   * q e ll com as mesmas coordenadas exatas garante pin centralizado.
-   * z=15 reproduz o zoom da imagem de referência (Cidade Jardim até Vila Olímpia).
-   * iwloc=B ancora o marcador no centro do iframe.
+   * Coordenadas precisas: R. do Rocio 288, Vila Olímpia, SP
+   * lat=-23.5940322, lng=-46.6860324 (fonte: IBGE / CEP 04552-010)
+   * q e ll alinhados ao mesmo ponto para garantir pin centralizado.
+   * z=15 mantém o zoom da imagem de referência.
    */
   const MAP_SRC =
     "https://maps.google.com/maps" +
-    "?q=-23.59365,-46.68868" +
-    "&ll=-23.59365,-46.68868" +
+    "?q=-23.5940322,-46.6860324" +
+    "&ll=-23.5940322,-46.6860324" +
     "&z=15" +
     "&t=m" +
     "&ie=UTF8" +
