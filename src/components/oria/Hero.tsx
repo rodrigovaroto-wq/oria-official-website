@@ -9,16 +9,13 @@ export const Hero = () => {
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
-    // Garante autoplay em iOS Safari e outros navegadores restritivos
     v.muted = true;
     v.setAttribute("playsinline", "");
     v.setAttribute("webkit-playsinline", "");
     const attempt = () => {
       const p = v.play();
       if (p !== undefined) {
-        p.catch(() => {
-          // fallback silencioso — poster continua visível
-        });
+        p.catch(() => {});
       }
     };
     if (v.readyState >= 2) {
@@ -74,17 +71,12 @@ export const Hero = () => {
         }}
       >
         <div className="max-w-full">
-          {/*
-            Mobile:  1.58rem  (era 1.65rem, -1pt)
-            Desktop: 2.35rem / 2.85rem  (era 2rem / 2.5rem, +5pt cada)
-            Quebras de linha exatas conforme especificação.
-          */}
           <h1
             className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full md:max-w-[90%]"
             style={{ lineHeight: 1.18, marginBottom: "14px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
           >
-            {/* MOBILE */}
-            <span className="md:hidden" style={{ fontSize: "1.58rem" }}>
+            {/* MOBILE — 1.51rem (era 1.58rem, -1pt) */}
+            <span className="md:hidden" style={{ fontSize: "1.51rem" }}>
               Especialistas em Reestruturação<br />
               Corporativa, contemplando<br />
               reorganização administrativa,<br />
