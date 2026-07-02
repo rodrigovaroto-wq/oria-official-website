@@ -26,8 +26,6 @@ export const Hero = () => {
     return () => v.removeEventListener("canplay", attempt);
   }, []);
 
-  /* Estilo compartilhado para desativar text-wrap:balance do Tailwind base
-     e garantir que os <br /> sejam respeitados em ambas as versões. */
   const headlineStyle: React.CSSProperties = {
     textWrap: "unset" as never,
     overflowWrap: "normal",
@@ -83,14 +81,13 @@ export const Hero = () => {
               lineHeight: 1.18,
               marginBottom: "14px",
               fontWeight: 700,
-              /* Desativa text-wrap:balance que o Tailwind base injeta em h1 */
               textWrap: "unset" as never,
             }}
           >
-            {/* MOBILE — 1.51rem */}
+            {/* MOBILE — 1.44rem (era 1.51rem, -1pt) */}
             <span
               className="md:hidden"
-              style={{ ...headlineStyle, fontSize: "1.51rem", display: "block" }}
+              style={{ ...headlineStyle, fontSize: "1.44rem", display: "block" }}
             >
               Especialistas em Reestruturação<br />
               Corporativa, contemplando<br />
