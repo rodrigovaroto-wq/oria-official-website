@@ -1,0 +1,15 @@
+---
+title: "Axia Energia e Alupar vencem leilão de transmissão, que tem deságio médio de 53,2%"
+slug: "axia-energia-e-alupar-vencem-leilao-de-transmissao-que-tem-desagio-med"
+description: "A Axia Energia, anteriormente Eletrobras, conquistou três dos quatro lotes em um leilão de transmissão realizado na B3, em São Paulo."
+summary_full: "A Axia Energia, anteriormente Eletrobras, conquistou três dos quatro lotes em um leilão de transmissão realizado na B3, em São Paulo. O consórcio Olympus XX, composto pela Alupar e pela Infra 2 Investment, venceu o maior lote, enquanto a Axia ficou com os lotes 8, 9 e 10. Os investimentos totais no leilão somam R$ 1,8 bilhão, com um deságio médio de 53,2%, o terceiro maior desde 2017. O Lote 7 foi arrematado pelo consórcio da Alupar e Perfin, que apresentou uma Receita Anual Permitida (RAP) de R$ 96,7 milhões, representando um desconto de 52% em relação à RAP máxima estipulada pela Aneel. A Axia, por sua vez, obteve o Lote 8 com uma RAP de R$ 10,8 milhões, refletindo um deságio de 59%. Os lotes 9 e 10 também foram adquiridos pela Axia, com RAPs de R$ 16,2 milhões e R$ 23,75 milhões, respectivamente, ambos com deságios significativos. A expectativa é que as obras gerem mais de 4 mil empregos, com conclusão prevista entre 42 e 60 meses. A movimentação no leilão pode sinalizar um aumento no interesse por ativos de transmissão, especialmente em um contexto de deságios significativos."
+date: "2026-07-03"
+category: "ma"
+source_name: "Valor"
+source_url: "https://valor.globo.com/empresas/noticia/2026/07/03/axia-energia-e-alupar-vencem-leilo-de-transmisso-que-tem-desgio-mdio-de-532-pontos-percentuais.ghtml"
+image: "https://s2-valor.glbimg.com/cI-g0xLvcU5cZ-Ed4u6XpFJxGnI=/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/6/C/XeshyARz2jwLJZgPYihQ/99721bc2-6564-4c72-b5d8-517832f072fe.jpg"
+---
+
+A Axia Energia, anteriormente Eletrobras, conquistou três dos quatro lotes em um leilão de transmissão realizado na B3, em São Paulo. O consórcio Olympus XX, composto pela Alupar e pela Infra 2 Investment, venceu o maior lote, enquanto a Axia ficou com os lotes 8, 9 e 10. Os investimentos totais no leilão somam R$ 1,8 bilhão, com um deságio médio de 53,2%, o terceiro maior desde 2017. O Lote 7 foi arrematado pelo consórcio da Alupar e Perfin, que apresentou uma Receita Anual Permitida (RAP) de R$ 96,7 milhões, representando um desconto de 52% em relação à RAP máxima estipulada pela Aneel. A Axia, por sua vez, obteve o Lote 8 com uma RAP de R$ 10,8 milhões, refletindo um deságio de 59%. Os lotes 9 e 10 também foram adquiridos pela Axia, com RAPs de R$ 16,2 milhões e R$ 23,75 milhões, respectivamente, ambos com deságios significativos. A expectativa é que as obras gerem mais de 4 mil empregos, com conclusão prevista entre 42 e 60 meses. A movimentação no leilão pode sinalizar um aumento no interesse por ativos de transmissão, especialmente em um contexto de deságios significativos.
+
+Fonte: [Valor](https://valor.globo.com/empresas/noticia/2026/07/03/axia-energia-e-alupar-vencem-leilo-de-transmisso-que-tem-desgio-mdio-de-532-pontos-percentuais.ghtml)
