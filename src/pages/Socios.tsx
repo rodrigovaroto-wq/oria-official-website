@@ -125,70 +125,71 @@ const SociosPage = () => {
               intro={UI.socios.intro}
             />
 
-            <div className="mt-4 md:mt-8 flex flex-col gap-16 md:gap-28">
+            <div className="mt-4 md:mt-8 flex flex-col gap-16 md:gap-24">
               {SOCIOS.map((s, idx) => {
                 const photo = PARTNER_PHOTOS[s.photo];
                 const photoLeft = idx % 2 === 0;
                 return (
-                  <article
-                    key={s.name}
-                    className="reveal grid gap-8 md:gap-14 md:grid-cols-[minmax(0,0.85fr)_1fr] items-start"
-                  >
-                    {/* Retrato */}
-                    <div className={photoLeft ? "md:order-1" : "md:order-2"}>
-                      <div className="relative">
+                  <article key={s.name} className="reveal">
+                    {/* Cabeçalho do perfil: retrato + identidade lado a lado */}
+                    <div
+                      className={`flex flex-col sm:flex-row gap-7 sm:gap-9 items-start ${
+                        photoLeft ? "" : "sm:flex-row-reverse"
+                      }`}
+                    >
+                      <figure className="w-[180px] sm:w-[200px] md:w-[220px] shrink-0">
                         {photo ? (
                           <img
                             src={photo}
                             alt={s.name}
-                            width={640}
-                            height={800}
+                            width={900}
+                            height={900}
                             loading="lazy"
-                            className="w-full aspect-[4/5] object-cover object-top grayscale contrast-[1.02] bg-paper-warm"
+                            className="block w-full aspect-[4/5] object-cover object-top grayscale contrast-[1.02] bg-paper-warm"
                           />
                         ) : (
                           <div className="w-full aspect-[4/5] bg-foreground flex items-center justify-center">
                             <span className="font-serif-display text-background text-5xl">{s.initials}</span>
                           </div>
                         )}
-                        {/* fio de acento, canto inferior */}
-                        <span aria-hidden className="absolute -bottom-px left-0 h-[3px] w-16 bg-accent" />
+                        {/* fio de acento sob o retrato */}
+                        <span aria-hidden className="block h-[3px] w-14 bg-accent" />
+                      </figure>
+
+                      <div className="min-w-0 flex-1 sm:pt-1">
+                        <div className="font-mono-label text-[11px] text-accent mb-3">{s.role}</div>
+                        <h2 className="font-serif-display text-[clamp(28px,4.5vw,42px)] font-light leading-[1.04] tracking-[-0.02em] mb-4 break-words">
+                          {s.name}
+                        </h2>
+                        {s.linkedin && (
+                          <a
+                            href={s.linkedin}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            referrerPolicy="no-referrer"
+                            aria-label={`${UI.socios.linkedinAria} ${s.name}`}
+                            className="inline-flex items-center gap-2 text-muted hover:text-accent transition-colors text-[12px] font-mono-label"
+                          >
+                            <LinkedIn className="w-4 h-4" />
+                            LinkedIn →
+                          </a>
+                        )}
+
+                        <ul className="list-none mt-7 border-t border-rule">
+                          {s.highlights.map((h, i) => (
+                            <li
+                              key={i}
+                              className="py-3.5 border-b border-rule text-[14.5px] leading-[1.55] text-ink-soft"
+                            >
+                              {h}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
 
-                    {/* Conteúdo */}
-                    <div className={photoLeft ? "md:order-2 md:pt-2" : "md:order-1 md:pt-2"}>
-                      <div className="font-mono-label text-[11px] text-accent mb-4">{s.role}</div>
-                      <h2 className="font-serif-display text-[clamp(30px,5.5vw,48px)] font-light leading-[1.02] tracking-[-0.02em] mb-5 break-words">
-                        {s.name}
-                      </h2>
-                      {s.linkedin && (
-                        <a
-                          href={s.linkedin}
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          referrerPolicy="no-referrer"
-                          aria-label={`${UI.socios.linkedinAria} ${s.name}`}
-                          className="inline-flex items-center gap-2 text-muted hover:text-accent transition-colors text-[12px] font-mono-label"
-                        >
-                          <LinkedIn className="w-4 h-4" />
-                          LinkedIn →
-                        </a>
-                      )}
-
-                      <ul className="list-none mt-8 mb-9 border-t border-rule">
-                        {s.highlights.map((h, i) => (
-                          <li
-                            key={i}
-                            className="py-4 border-b border-rule text-[14.5px] leading-[1.55] text-ink-soft"
-                          >
-                            {h}
-                          </li>
-                        ))}
-                      </ul>
-
-                      <div className="max-w-[560px]">{renderBio(s.bio)}</div>
-                    </div>
+                    {/* Biografia — largura total, fluindo abaixo do cabeçalho */}
+                    <div className="mt-7 md:mt-8 max-w-[760px]">{renderBio(s.bio)}</div>
                   </article>
                 );
               })}
