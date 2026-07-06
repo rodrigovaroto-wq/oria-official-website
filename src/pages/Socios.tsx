@@ -125,19 +125,22 @@ const SociosPage = () => {
               intro={UI.socios.intro}
             />
 
-            <div className="mt-4 md:mt-8 flex flex-col gap-16 md:gap-24">
+            <div className="mt-4 md:mt-10 flex flex-col gap-20 md:gap-28">
               {SOCIOS.map((s, idx) => {
                 const photo = PARTNER_PHOTOS[s.photo];
                 const photoLeft = idx % 2 === 0;
+                const cols = photoLeft ? "md:grid-cols-[286px_1fr]" : "md:grid-cols-[1fr_286px]";
                 return (
                   <article key={s.name} className="reveal">
-                    {/* Cabeçalho do perfil: retrato + identidade lado a lado */}
-                    <div
-                      className={`flex flex-col sm:flex-row gap-7 sm:gap-9 items-start ${
-                        photoLeft ? "" : "sm:flex-row-reverse"
-                      }`}
-                    >
-                      <figure className="w-[180px] sm:w-[200px] md:w-[220px] shrink-0">
+                    {/* Cabeçalho: retrato de um lado, identidade do outro.
+                        Moldura terracota contínua: lateral externa do retrato + base
+                        (a base é a última linha antes da descrição). */}
+                    <div className={`grid gap-8 md:gap-12 items-start md:border-b-[3px] md:border-accent ${cols}`}>
+                      <figure
+                        className={`w-[240px] sm:w-[268px] md:w-full ${
+                          photoLeft ? "md:order-1 md:border-l-[3px]" : "md:order-2 md:border-r-[3px]"
+                        } md:border-accent`}
+                      >
                         {photo ? (
                           <img
                             src={photo}
@@ -152,11 +155,11 @@ const SociosPage = () => {
                             <span className="font-serif-display text-background text-5xl">{s.initials}</span>
                           </div>
                         )}
-                        {/* fio de acento sob o retrato */}
-                        <span aria-hidden className="block h-[3px] w-14 bg-accent" />
+                        {/* fio de acento no mobile (a moldura só aparece a partir de md) */}
+                        <span aria-hidden className="mt-3 block h-[3px] w-14 bg-accent md:hidden" />
                       </figure>
 
-                      <div className="min-w-0 flex-1 sm:pt-1">
+                      <div className={`min-w-0 ${photoLeft ? "md:order-2" : "md:order-1"}`}>
                         <div className="font-mono-label text-[11px] text-accent mb-3">{s.role}</div>
                         <h2 className="font-serif-display text-[clamp(28px,4.5vw,42px)] font-light leading-[1.04] tracking-[-0.02em] mb-4 break-words">
                           {s.name}
@@ -188,8 +191,13 @@ const SociosPage = () => {
                       </div>
                     </div>
 
-                    {/* Biografia — largura total, fluindo abaixo do cabeçalho */}
-                    <div className="mt-7 md:mt-8 max-w-[760px]">{renderBio(s.bio)}</div>
+                    {/* Biografia — mesmo lado do texto (direita no Enzo, esquerda no Gustavo) */}
+                    <div className={`mt-8 md:mt-10 grid gap-8 md:gap-12 ${cols}`}>
+                      <div className={`hidden md:block ${photoLeft ? "md:order-1" : "md:order-2"}`} />
+                      <div className={`max-w-[760px] ${photoLeft ? "md:order-2" : "md:order-1"}`}>
+                        {renderBio(s.bio)}
+                      </div>
+                    </div>
                   </article>
                 );
               })}
