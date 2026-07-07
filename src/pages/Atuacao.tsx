@@ -1,7 +1,6 @@
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { SectionHeader } from "@/components/oria/SectionHeader";
-import { Contato } from "@/components/oria/Contato";
 import { useContent } from "@/data/oria";
 import { useSEO } from "@/hooks/useSEO";
 import { useReveal } from "@/hooks/useReveal";
@@ -123,8 +122,6 @@ const AtuacaoPage = () => {
             </div>
           </div>
         </section>
-
-        <Contato />
       </main>
       <Footer />
     </>

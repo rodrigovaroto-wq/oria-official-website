@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { SectionHeader } from "@/components/oria/SectionHeader";
-import { Contato } from "@/components/oria/Contato";
 import { useContent } from "@/data/oria";
 import { useSEO } from "@/hooks/useSEO";
 import { useReveal } from "@/hooks/useReveal";
@@ -26,7 +25,7 @@ const SCHEMA_CASOS = {
 };
 
 const CasosPage = () => {
-  const { CASOS, TRACK_RECORD, UI } = useContent();
+  const { CASOS, UI } = useContent();
   const [open, setOpen] = useState<number | null>(null);
 
   useSEO({
@@ -117,17 +116,8 @@ const CasosPage = () => {
                 );
               })}
             </div>
-
-            <div className="mt-20 pt-12 border-t border-rule grid md:grid-cols-[180px_1fr] gap-6 md:gap-20 items-start">
-              <div className="font-mono-label text-[11px] text-muted pt-2">— {UI.casos.track}</div>
-              <p className="font-serif-display text-[22px] leading-[1.4] font-light max-w-[820px] text-ink-soft">
-                {TRACK_RECORD}
-              </p>
-            </div>
           </div>
         </section>
-
-        <Contato />
       </main>
       <Footer />
     </>

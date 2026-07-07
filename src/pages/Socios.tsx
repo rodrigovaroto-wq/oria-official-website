@@ -1,7 +1,6 @@
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { SectionHeader } from "@/components/oria/SectionHeader";
-import { Contato } from "@/components/oria/Contato";
 import { LinkedIn } from "@/components/oria/Icons";
 import { useContent } from "@/data/oria";
 import { useSEO } from "@/hooks/useSEO";
@@ -135,11 +134,11 @@ const SociosPage = () => {
                     {/* Cabeçalho: retrato de um lado, identidade do outro.
                         Moldura terracota contínua: lateral externa do retrato + base
                         (a base é a última linha antes da descrição). */}
-                    <div className={`grid gap-8 md:gap-12 items-start md:border-b-[3px] md:border-accent ${cols}`}>
+                    <div className={`grid gap-8 md:gap-12 items-start ${cols}`}>
                       <figure
                         className={`w-[240px] sm:w-[268px] md:w-full ${
                           photoLeft ? "md:order-1 md:border-l-[3px]" : "md:order-2 md:border-r-[3px]"
-                        } md:border-accent`}
+                        } md:border-b-[3px] md:border-accent`}
                       >
                         {photo ? (
                           <img
@@ -204,8 +203,6 @@ const SociosPage = () => {
             </div>
           </div>
         </section>
-
-        <Contato />
       </main>
       <Footer />
     </>
