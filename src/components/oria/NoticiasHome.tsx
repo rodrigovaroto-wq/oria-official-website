@@ -9,7 +9,6 @@ export const NoticiasHome = () => {
   const posts = getAllPosts();
   if (posts.length === 0) return null;
 
-  const label = lang === "en" ? "News" : "Notícias";
   const heading = lang === "en"
     ? "Stay close to what's moving the market."
     : "Fique por dentro do que acontece no mercado.";
@@ -19,7 +18,6 @@ export const NoticiasHome = () => {
     <section id="noticias" className="bg-background pt-20 md:pt-28 pb-5 md:pb-7">
       <div className="container-oria">
         <div className="mb-12 reveal max-w-[820px]">
-          <div className="font-mono-label text-[11px] text-muted mb-5">{label}</div>
           <h2 className="text-foreground font-medium text-[clamp(26px,4vw,42px)] tracking-tight leading-[1.15]">
             {heading}
           </h2>

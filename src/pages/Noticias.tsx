@@ -66,7 +66,6 @@ const NoticiasPage = () => {
         <section className="py-4 md:py-6">
           <div className="container-oria">
             <SectionHeader
-              num="§ NEWS"
               heading={
                 <>
                   {lang === "en" ? "Stay close to what's moving the " : "Fique por dentro do que acontece no "}

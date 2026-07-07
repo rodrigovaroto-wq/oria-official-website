@@ -84,9 +84,6 @@ export const Contato = () => {
   return (
     <section id="contato" className="bg-foreground text-background">
       <div className="container-oria pt-60 md:pt-12 pb-32 md:pb-40">
-        <div className="font-mono-label text-[10px] text-background/50 mb-12 text-left">
-          {UI.contato.label}
-        </div>
         <div className="max-w-[760px] mx-auto text-center mb-20 md:mb-24">
           <h2 className="font-serif-display font-light leading-[1.05] tracking-[-0.025em] mb-6 text-[clamp(30px,3.4vw,44px)]">
             {UI.contato.headingA}

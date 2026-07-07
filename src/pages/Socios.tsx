@@ -1,11 +1,17 @@
-import { useEffect } from "react";
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { SectionHeader } from "@/components/oria/SectionHeader";
-import { Contato } from "@/components/oria/Contato";
 import { LinkedIn } from "@/components/oria/Icons";
 import { useContent } from "@/data/oria";
 import { useSEO } from "@/hooks/useSEO";
+import { useReveal } from "@/hooks/useReveal";
+import socioEnzo from "@/assets/socio-enzo.png";
+import socioGustavo from "@/assets/socio-gustavo.png";
+
+const PARTNER_PHOTOS: Record<string, string> = {
+  enzo: socioEnzo,
+  gustavo: socioGustavo,
+};
 
 const SCHEMA_SOCIOS = [
   {
@@ -70,17 +76,6 @@ const SCHEMA_SOCIOS = [
   },
 ];
 
-const toRoman = (n: number) => {
-  const map: [number, string][] = [
-    [1000, "M"], [900, "CM"], [500, "D"], [400, "CD"],
-    [100, "C"], [90, "XC"], [50, "L"], [40, "XL"],
-    [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"],
-  ];
-  let r = "";
-  for (const [v, s] of map) { while (n >= v) { r += s; n -= v; } }
-  return r;
-};
-
 const renderBio = (paragraphs: string[]) =>
   paragraphs.map((p, i) => {
     const parts = p.split(/(\*\*[^*]+\*\*)/g).map((seg, idx) => {
@@ -111,23 +106,7 @@ const SociosPage = () => {
     schema: SCHEMA_SOCIOS,
   });
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const els = document.querySelectorAll<HTMLElement>(".reveal");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("visible");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
-    );
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
+  useReveal(true);
 
   return (
     <>
@@ -136,60 +115,94 @@ const SociosPage = () => {
         <section className="bg-background py-16 md:py-24">
           <div className="container-oria">
             <SectionHeader
-              num={UI.socios.num}
               heading={
                 <>
                   {UI.socios.headingA}
-                  <em className="italic text-accent font-light">{UI.socios.headingB}</em>
+                  {UI.socios.headingB}
                 </>
               }
               intro={UI.socios.intro}
             />
 
-            <div className="grid sm:grid-cols-2 border-t border-l border-rule reveal">
-              {SOCIOS.map((s) => (
-                <article key={s.name} className="p-7 sm:p-10 md:p-12 border-r border-b border-rule bg-background">
-                  <div className="mb-6">
-                    <div className="font-mono-label text-[10px] text-accent mb-2">{s.role}</div>
-                    <h3 className="font-serif-display text-[clamp(22px,5vw,32px)] font-normal leading-[1.1] tracking-[-0.02em] mb-2 break-words">
-                      {s.name}
-                    </h3>
-                    {s.linkedin && (
-                      <a
-                        href={s.linkedin}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        referrerPolicy="no-referrer"
-                        aria-label={`${UI.socios.linkedinAria} ${s.name}`}
-                        className="inline-flex items-center gap-2 text-muted hover:text-foreground transition-colors text-[12px] font-mono-label"
+            <div className="mt-4 md:mt-10 flex flex-col gap-20 md:gap-28">
+              {SOCIOS.map((s, idx) => {
+                const photo = PARTNER_PHOTOS[s.photo];
+                const photoLeft = idx % 2 === 0;
+                const cols = photoLeft ? "md:grid-cols-[286px_1fr]" : "md:grid-cols-[1fr_286px]";
+                return (
+                  <article key={s.name} className="reveal">
+                    {/* Cabeçalho: retrato de um lado, identidade do outro.
+                        Moldura terracota contínua: lateral externa do retrato + base
+                        (a base é a última linha antes da descrição). */}
+                    <div className={`grid gap-8 md:gap-12 items-start ${cols}`}>
+                      <figure
+                        className={`w-[240px] sm:w-[268px] md:w-full ${
+                          photoLeft ? "md:order-1 md:border-l-[3px]" : "md:order-2 md:border-r-[3px]"
+                        } md:border-b-[3px] md:border-accent`}
                       >
-                        <LinkedIn className="w-4 h-4" />
-                        LinkedIn →
-                      </a>
-                    )}
-                  </div>
+                        {photo ? (
+                          <img
+                            src={photo}
+                            alt={s.name}
+                            width={900}
+                            height={900}
+                            loading="lazy"
+                            className="block w-full aspect-[4/5] object-cover object-top grayscale contrast-[1.02] bg-paper-warm"
+                          />
+                        ) : (
+                          <div className="w-full aspect-[4/5] bg-foreground flex items-center justify-center">
+                            <span className="font-serif-display text-background text-5xl">{s.initials}</span>
+                          </div>
+                        )}
+                        {/* fio de acento no mobile (a moldura só aparece a partir de md) */}
+                        <span aria-hidden className="mt-3 block h-[3px] w-14 bg-accent md:hidden" />
+                      </figure>
 
-                  <ul className="list-none mb-8 border-t border-rule">
-                    {s.highlights.map((h, i) => (
-                      <li key={i} className="flex gap-4 py-3 border-b border-rule text-[14px] leading-[1.5] text-ink-soft">
-                        <span className="font-mono text-[10px] text-muted tracking-[0.15em] w-5 shrink-0 pt-1">
-                          {toRoman(i + 1)}
-                        </span>
-                        <span>{h}</span>
-                      </li>
-                    ))}
-                  </ul>
+                      <div className={`min-w-0 ${photoLeft ? "md:order-2" : "md:order-1"}`}>
+                        <div className="font-mono-label text-[11px] text-accent mb-3">{s.role}</div>
+                        <h2 className="font-serif-display text-[clamp(28px,4.5vw,42px)] font-light leading-[1.04] tracking-[-0.02em] mb-4 break-words">
+                          {s.name}
+                        </h2>
+                        {s.linkedin && (
+                          <a
+                            href={s.linkedin}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            referrerPolicy="no-referrer"
+                            aria-label={`${UI.socios.linkedinAria} ${s.name}`}
+                            className="inline-flex items-center gap-2 text-muted hover:text-accent transition-colors text-[12px] font-mono-label"
+                          >
+                            <LinkedIn className="w-4 h-4" />
+                            LinkedIn →
+                          </a>
+                        )}
 
-                  <div className="w-12 h-px bg-foreground my-7" />
+                        <ul className="list-none mt-7 border-t border-rule">
+                          {s.highlights.map((h, i) => (
+                            <li
+                              key={i}
+                              className="py-3.5 border-b border-rule text-[14.5px] leading-[1.55] text-ink-soft"
+                            >
+                              {h}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
 
-                  <div>{renderBio(s.bio)}</div>
-                </article>
-              ))}
+                    {/* Biografia — mesmo lado do texto (direita no Enzo, esquerda no Gustavo) */}
+                    <div className={`mt-8 md:mt-10 grid gap-8 md:gap-12 ${cols}`}>
+                      <div className={`hidden md:block ${photoLeft ? "md:order-1" : "md:order-2"}`} />
+                      <div className={`max-w-[760px] ${photoLeft ? "md:order-2" : "md:order-1"}`}>
+                        {renderBio(s.bio)}
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
-
-        <Contato />
       </main>
       <Footer />
     </>

@@ -1,10 +1,14 @@
-import { useEffect } from "react";
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { SectionHeader } from "@/components/oria/SectionHeader";
-import { Contato } from "@/components/oria/Contato";
 import { useContent } from "@/data/oria";
 import { useSEO } from "@/hooks/useSEO";
+import { useReveal } from "@/hooks/useReveal";
+import { Search, Wallet, RefreshCw, Handshake, Database, Stethoscope, Users, LineChart, type LucideIcon } from "lucide-react";
+
+// Ícones que representam cada frente e cada etapa do método (na ordem do conteúdo)
+const FRENTE_ICONS: LucideIcon[] = [Search, Wallet, RefreshCw, Handshake];
+const METODO_ICONS: LucideIcon[] = [Database, Stethoscope, Users, LineChart];
 
 const SCHEMA_ATUACAO = {
   "@context": "https://schema.org",
@@ -35,23 +39,7 @@ const AtuacaoPage = () => {
     schema: SCHEMA_ATUACAO,
   });
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const els = document.querySelectorAll<HTMLElement>(".reveal");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("visible");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
-    );
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
+  useReveal(true);
 
   return (
     <>
@@ -60,67 +48,80 @@ const AtuacaoPage = () => {
         <section className="bg-background py-16 md:py-24">
           <div className="container-oria">
             <SectionHeader
-              num={UI.atuacao.pageNum}
               heading={
                 <>
                   {UI.atuacao.headingA}
-                  <em className="italic text-accent font-light">{UI.atuacao.headingB}</em>
+                  {UI.atuacao.headingB}
                 </>
               }
               intro={UI.atuacao.intro}
             />
 
-            <div className="grid sm:grid-cols-2 border-t border-l border-rule reveal">
-              {FRENTES.map((f) => (
+            <div className="mt-4 md:mt-8 border-t border-rule reveal">
+              {FRENTES.map((f, i) => {
+                const Icon = FRENTE_ICONS[i % FRENTE_ICONS.length];
+                return (
                 <article
                   key={f.num}
-                  className="p-7 sm:p-10 md:p-12 border-r border-b border-rule bg-background"
+                  className="grid md:grid-cols-[auto_1fr] gap-4 md:gap-14 py-10 md:py-14 border-b border-rule"
                 >
-                  <div className="font-mono text-[11px] text-muted tracking-[0.18em] mb-6">
-                    {UI.atuacao.frenteLabel} {f.num}
+                  <div className="md:pt-1">
+                    <Icon aria-hidden strokeWidth={1.5} className="w-9 h-9 md:w-10 md:h-10 text-foreground" />
                   </div>
-                  <h3 className="font-serif-display text-[clamp(20px,4.5vw,28px)] font-normal leading-[1.15] tracking-[-0.015em] mb-4">
-                    {f.title}
-                  </h3>
-                  <p className="text-[15.5px] leading-[1.55] text-foreground font-medium mb-3">
-                    {f.bold}
-                  </p>
-                  <p className="text-[15px] leading-[1.6] text-ink-soft">{f.desc}</p>
+                  <div className="max-w-[820px]">
+                    <h3 className="font-serif-display text-[clamp(22px,4vw,32px)] font-normal leading-[1.15] tracking-[-0.015em] mb-5">
+                      {f.title}
+                    </h3>
+                    <p className="text-[16px] md:text-[17px] leading-[1.6] text-foreground font-medium mb-4">
+                      {f.bold}
+                    </p>
+                    <p className="text-[15px] md:text-[15.5px] leading-[1.7] text-ink-soft">{f.desc}</p>
+                  </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
 
-        <section className="bg-paper-warm py-24 md:py-36">
+        <section style={{ backgroundColor: "#11161D" }} className="py-24 md:py-36">
           <div className="container-oria">
             <SectionHeader
-              num={UI.atuacao.metodoNum}
+              invert
               heading={
                 <>
                   {UI.atuacao.metodoHeadingA}
-                  <em className="italic text-accent font-light">{UI.atuacao.metodoHeadingB}</em>
+                  {UI.atuacao.metodoHeadingB}
                 </>
               }
             />
-            <div className="grid sm:grid-cols-2 gap-px bg-rule border border-rule reveal">
-              {METODO.map((m) => (
+            <div
+              className="grid sm:grid-cols-2 gap-x-14 gap-y-10 md:gap-y-14 reveal"
+              style={{ borderTop: "1px solid rgba(246,244,238,0.18)" }}
+            >
+              {METODO.map((m, i) => {
+                const Icon = METODO_ICONS[i % METODO_ICONS.length];
+                return (
                 <article
                   key={m.num}
-                  className="bg-paper-warm p-7 sm:p-10 md:p-12 flex flex-col gap-5 min-h-[200px] sm:min-h-[240px]"
+                  className="pt-8 md:pt-10"
+                  style={{ borderTop: "1px solid rgba(246,244,238,0.18)" }}
                 >
-                  <div className="font-serif-display italic text-base text-accent">{m.num}</div>
-                  <h3 className="font-serif-display text-[clamp(20px,4.5vw,26px)] font-normal leading-[1.2] tracking-[-0.015em]">
+                  <div className="mb-5">
+                    <Icon aria-hidden strokeWidth={1.5} className="w-8 h-8" style={{ color: "#F6F4EE" }} />
+                  </div>
+                  <h3 className="font-serif-display text-[clamp(20px,3vw,26px)] font-normal leading-[1.2] tracking-[-0.015em] mb-3" style={{ color: "#F6F4EE" }}>
                     {m.title}
                   </h3>
-                  <p className="text-[15.5px] leading-[1.6] text-ink-soft">{m.desc}</p>
+                  <p className="text-[15px] md:text-[15.5px] leading-[1.65]" style={{ color: "#F6F4EE", opacity: 0.75 }}>
+                    {m.desc}
+                  </p>
                 </article>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
-
-        <Contato />
       </main>
       <Footer />
     </>

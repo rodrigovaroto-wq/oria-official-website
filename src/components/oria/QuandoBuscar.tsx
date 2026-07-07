@@ -16,9 +16,6 @@ export const QuandoBuscar = () => {
         {/* DESKTOP: layout de 2 colunas (inalterado) */}
         <div className="hidden md:grid grid-cols-2 gap-14 items-start">
           <div>
-            <div className="font-mono-label text-[11px] mb-5" style={{ color: "#F6F4EE" }}>
-              {UI.quandoBuscar.num}
-            </div>
             <h2 className="font-medium tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-7" style={{ color: "#F6F4EE" }}>
               {UI.quandoBuscar.headingA}
               <br />
@@ -63,9 +60,6 @@ export const QuandoBuscar = () => {
         {/* MOBILE: coluna única — heading, lista, depois botão */}
         <div className="md:hidden flex flex-col gap-8">
           <div>
-            <div className="font-mono-label text-[11px] mb-5" style={{ color: "#F6F4EE" }}>
-              {UI.quandoBuscar.num}
-            </div>
             <h2 className="font-medium tracking-tight text-[clamp(22px,5.5vw,30px)] leading-[1.2]" style={{ color: "#F6F4EE" }}>
               {UI.quandoBuscar.headingA}
               <br />
