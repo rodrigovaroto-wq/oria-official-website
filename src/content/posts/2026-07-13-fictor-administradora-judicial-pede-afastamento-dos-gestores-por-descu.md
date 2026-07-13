@@ -1,0 +1,15 @@
+---
+title: "Fictor: administradora judicial pede afastamento dos gestores por descumprimento de decisões"
+slug: "fictor-administradora-judicial-pede-afastamento-dos-gestores-por-descu"
+description: "A administradora judicial da recuperação do Grupo Fictor, Laspro Consultores, protocolou um pedido na Justiça para o afastamento dos administradores das empresas do grupo e a…"
+summary_full: "A administradora judicial da recuperação do Grupo Fictor, Laspro Consultores, protocolou um pedido na Justiça para o afastamento dos administradores das empresas do grupo e a nomeação de um gestor judicial. O pedido é motivado pelo não cumprimento de determinações judiciais relacionadas à apresentação de documentos que esclareçam operações com a Est3lar e a Fictef Meio de Pagamento. A Laspro argumenta que as informações fornecidas até o momento estão desprovidas de lastro documental e que houve descumprimento de uma ordem anterior do Judiciário. A administradora judicial também destacou que a Fictor não quitou os honorários provisórios de R$ 100 mil mensais, solicitando uma última intimação para regularização, sob pena de convolação da recuperação em falência. Além disso, a Laspro manifestou apoio à venda de veículos do grupo via leilão judicial e pediu esclarecimentos sobre a alienação de uma aeronave Embraer. A situação atual do Grupo Fictor pode sinalizar um aumento na vigilância sobre a conformidade das empresas em recuperação judicial e suas obrigações financeiras."
+date: "2026-07-13"
+category: "insolvencia"
+source_name: "Money Times"
+source_url: "https://www.moneytimes.com.br/fictor-administradora-judicial-pede-afastamento-dos-gestores-por-descumprimento-de-decisoes-vtra/"
+image: "https://www.moneytimes.com.br/uploads/2026/02/fictor-e1782255282491.jpg"
+---
+
+A administradora judicial da recuperação do Grupo Fictor, Laspro Consultores, protocolou um pedido na Justiça para o afastamento dos administradores das empresas do grupo e a nomeação de um gestor judicial. O pedido é motivado pelo não cumprimento de determinações judiciais relacionadas à apresentação de documentos que esclareçam operações com a Est3lar e a Fictef Meio de Pagamento. A Laspro argumenta que as informações fornecidas até o momento estão desprovidas de lastro documental e que houve descumprimento de uma ordem anterior do Judiciário. A administradora judicial também destacou que a Fictor não quitou os honorários provisórios de R$ 100 mil mensais, solicitando uma última intimação para regularização, sob pena de convolação da recuperação em falência. Além disso, a Laspro manifestou apoio à venda de veículos do grupo via leilão judicial e pediu esclarecimentos sobre a alienação de uma aeronave Embraer. A situação atual do Grupo Fictor pode sinalizar um aumento na vigilância sobre a conformidade das empresas em recuperação judicial e suas obrigações financeiras.
+
+Fonte: [Money Times](https://www.moneytimes.com.br/fictor-administradora-judicial-pede-afastamento-dos-gestores-por-descumprimento-de-decisoes-vtra/)
