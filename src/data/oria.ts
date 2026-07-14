@@ -37,7 +37,7 @@ const SOBRE_PT = {
   eyebrow: "Quem somos",
   heading: "",
   paragraphs: [
-    "A Oria Partners é uma boutique independente especializada em reestruturação financeira, turnaround e situações especiais. Assessoramos empresas de middle e corporate e instituições financeiras em contextos de alta complexidade, conduzindo diagnósticos verificáveis, construindo consenso entre stakeholders e estruturando soluções viáveis para estabilização, liquidez e recuperação de valor.",
+    "A Oria Partners é uma boutique independente especializada em reestruturação financeira, turnaround e situações especiais. Assessoramos empresas de médio e grande porte e instituições financeiras em contextos de alta complexidade, conduzindo diagnósticos verificáveis, construindo consenso entre stakeholders e estruturando soluções viáveis para estabilização, liquidez e recuperação de valor.",
     "Atuamos em renegociação de passivos, reestruturações financeiras e operacionais, captação de liquidez e venda de ativos, com track record de casos complexos de grande sucesso reconhecidos como referências de mercado em recuperação de valor e coordenação entre credores e acionistas.",
     "Nossa abordagem combina profundidade técnica, visão estratégica e histórico comprovado de resultados na condução de processos complexos, com foco em execução, preservação de valor e tomada de decisão baseada em análise independente.",
   ],
