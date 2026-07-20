@@ -1,0 +1,15 @@
+---
+title: "Procuradoria-Geral do Rio ajuíza três ações por perdas de R$ 641 milhões do Rioprevidência com Master"
+slug: "procuradoria-geral-do-rio-ajuiza-tres-acoes-por-perdas-de-r-641-milhoe"
+description: "A Procuradoria-Geral do Estado do Rio de Janeiro (PGE-RJ) protocolou três ações judiciais contra a Master Corretora, atualmente em liquidação extrajudicial, e gestoras de fundos…"
+summary_full: "A Procuradoria-Geral do Estado do Rio de Janeiro (PGE-RJ) protocolou três ações judiciais contra a Master Corretora, atualmente em liquidação extrajudicial, e gestoras de fundos de investimento, visando apurar perdas de R$ 641,4 milhões em investimentos do Rioprevidência, fundo de previdência dos servidores estaduais do Rio. As perdas referem-se a aplicações em dois fundos administrados pela Master, o Revolution e o Texas I FIA. No fundo Revolution, o Rioprevidência investiu R$ 481,4 milhões, enquanto no Texas I FIA, a aplicação inicial de R$ 150 milhões desvalorizou para R$ 14,8 milhões. A PGE alega que a gestão do Texas I FIA concentrou a carteira em ações da Ambipar, inflacionando artificialmente seu preço, e que o fundo Revolution votou em alterações prejudiciais aos cotistas. As ações incluem pedidos de tutela cautelar para garantir o resgate de R$ 481 milhões e o bloqueio de bens dos envolvidos. A PGE também busca a apresentação de auditoria independente sobre o Texas I FIA e a obtenção de documentos que estão sob segredo de Justiça."
+date: "2026-07-20"
+category: "insolvencia"
+source_name: "Valor"
+source_url: "https://valor.globo.com/financas/noticia/2026/07/17/procuradoria-geral-do-rio-ajuza-trs-aes-por-perdas-de-r-641-milhes-do-rioprevidncia-com-master.ghtml"
+image: "https://s2-valor.glbimg.com/BoDM0p8UB7Cc4fX2Hz_0BB6ZAWk=/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/w/s/BhtIwOQZ23HAzRS7hWAg/444364865.jpg"
+---
+
+A Procuradoria-Geral do Estado do Rio de Janeiro (PGE-RJ) protocolou três ações judiciais contra a Master Corretora, atualmente em liquidação extrajudicial, e gestoras de fundos de investimento, visando apurar perdas de R$ 641,4 milhões em investimentos do Rioprevidência, fundo de previdência dos servidores estaduais do Rio. As perdas referem-se a aplicações em dois fundos administrados pela Master, o Revolution e o Texas I FIA. No fundo Revolution, o Rioprevidência investiu R$ 481,4 milhões, enquanto no Texas I FIA, a aplicação inicial de R$ 150 milhões desvalorizou para R$ 14,8 milhões. A PGE alega que a gestão do Texas I FIA concentrou a carteira em ações da Ambipar, inflacionando artificialmente seu preço, e que o fundo Revolution votou em alterações prejudiciais aos cotistas. As ações incluem pedidos de tutela cautelar para garantir o resgate de R$ 481 milhões e o bloqueio de bens dos envolvidos. A PGE também busca a apresentação de auditoria independente sobre o Texas I FIA e a obtenção de documentos que estão sob segredo de Justiça.
+
+Fonte: [Valor](https://valor.globo.com/financas/noticia/2026/07/17/procuradoria-geral-do-rio-ajuza-trs-aes-por-perdas-de-r-641-milhes-do-rioprevidncia-com-master.ghtml)
