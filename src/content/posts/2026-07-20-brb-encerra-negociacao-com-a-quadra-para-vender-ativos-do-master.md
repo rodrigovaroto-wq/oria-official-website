@@ -1,0 +1,15 @@
+---
+title: "BRB encerra negociação com a Quadra para vender ativos do Master"
+slug: "brb-encerra-negociacao-com-a-quadra-para-vender-ativos-do-master"
+description: "O Banco de Brasília (BRB) anunciou o encerramento das negociações com a gestora Quadra Capital para a venda de ativos do Banco Master, uma decisão atribuída a divergências sobre…"
+summary_full: "O Banco de Brasília (BRB) anunciou o encerramento das negociações com a gestora Quadra Capital para a venda de ativos do Banco Master, uma decisão atribuída a divergências sobre questões econômicas da transação. O BRB agora conduzirá o processo de venda de forma independente, após o término do período de negociações acordado entre as partes. A parceria inicial visava a venda de até R$ 15 bilhões em ativos, incluindo créditos e participações societárias, herdados do Banco Master, que foi liquidado em novembro do ano anterior devido a fraudes. O BRB enfrenta uma crise de capital e liquidez, necessitando de uma injeção de até R$ 8,8 bilhões, e está em negociação para um empréstimo de R$ 6,6 bilhões com o Fundo Garantidor de Créditos (FGC). A instituição reafirma sua posição de liquidez e capacidade operacional, destacando seu compromisso com a sustentabilidade e a segurança de suas operações. O encerramento das negociações pode sinalizar uma intensificação da busca por soluções alternativas para a recuperação financeira do BRB, dependendo da capacidade de gestão dos ativos remanescentes."
+date: "2026-07-20"
+category: "reestruturacao"
+source_name: "Valor"
+source_url: "https://valor.globo.com/financas/noticia/2026/07/17/brb-encerra-negociacao-com-a-quadra-para-vender-ativos-do-master.ghtml"
+image: "https://s2-valor.glbimg.com/F0OfpSpe83vziKyWnjCIK3lZAyA=/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/r/G/SlFX0WTBCTKujNHnn3jg/439453241.jpg"
+---
+
+O Banco de Brasília (BRB) anunciou o encerramento das negociações com a gestora Quadra Capital para a venda de ativos do Banco Master, uma decisão atribuída a divergências sobre questões econômicas da transação. O BRB agora conduzirá o processo de venda de forma independente, após o término do período de negociações acordado entre as partes. A parceria inicial visava a venda de até R$ 15 bilhões em ativos, incluindo créditos e participações societárias, herdados do Banco Master, que foi liquidado em novembro do ano anterior devido a fraudes. O BRB enfrenta uma crise de capital e liquidez, necessitando de uma injeção de até R$ 8,8 bilhões, e está em negociação para um empréstimo de R$ 6,6 bilhões com o Fundo Garantidor de Créditos (FGC). A instituição reafirma sua posição de liquidez e capacidade operacional, destacando seu compromisso com a sustentabilidade e a segurança de suas operações. O encerramento das negociações pode sinalizar uma intensificação da busca por soluções alternativas para a recuperação financeira do BRB, dependendo da capacidade de gestão dos ativos remanescentes.
+
+Fonte: [Valor](https://valor.globo.com/financas/noticia/2026/07/17/brb-encerra-negociacao-com-a-quadra-para-vender-ativos-do-master.ghtml)
