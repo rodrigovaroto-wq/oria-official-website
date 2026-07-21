@@ -1,0 +1,15 @@
+---
+title: "Nubank anuncia compra do Porto Real para obter licença bancária no Brasil"
+slug: "nubank-anuncia-compra-do-porto-real-para-obter-licenca-bancaria-no-bra"
+description: "O Nubank anunciou a aquisição de 100% do Banco Porto Real de Investimentos, com o objetivo de obter uma licença bancária no Brasil."
+summary_full: "O Nubank anunciou a aquisição de 100% do Banco Porto Real de Investimentos, com o objetivo de obter uma licença bancária no Brasil. A transação está sujeita à aprovação do Banco Central do Brasil. A licença permitirá que o Nubank mantenha o termo “bank” em seu nome, conforme uma resolução do BC que proíbe instituições não autorizadas de utilizarem termos relacionados a atividades bancárias. A operação não requer exigências adicionais de capital ou liquidez e não alterará a estratégia de negócios ou a experiência dos clientes. O Nubank já possui outras autorizações regulatórias, como Instituição de Pagamento e Sociedade de Crédito, Financiamento e Investimento. A aquisição do Banco Porto Real, que atua na concessão de crédito para o segmento de atacado e possui ativos de R$ 32,1 milhões, é parte da estratégia do Nubank de expandir sua participação no mercado brasileiro, onde já conta com mais de 115 milhões de clientes. A operação pode sinalizar um movimento de consolidação no setor bancário, dependendo da resposta do Banco Central e da aceitação do mercado."
+date: "2026-07-21"
+category: "ma"
+source_name: "Valor"
+source_url: "https://valor.globo.com/financas/noticia/2026/07/20/nubank-anuncia-compra-do-banco-porto-real-para-obter-licenca-bancaria-no-brasil.ghtml"
+image: "https://s2-valor.glbimg.com/eHvz0Sig2CWC9jBv2R90x41dRt4=/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/g/I/aXYAEOTwCkiAjAVk163w/411691902.jpg"
+---
+
+O Nubank anunciou a aquisição de 100% do Banco Porto Real de Investimentos, com o objetivo de obter uma licença bancária no Brasil. A transação está sujeita à aprovação do Banco Central do Brasil. A licença permitirá que o Nubank mantenha o termo “bank” em seu nome, conforme uma resolução do BC que proíbe instituições não autorizadas de utilizarem termos relacionados a atividades bancárias. A operação não requer exigências adicionais de capital ou liquidez e não alterará a estratégia de negócios ou a experiência dos clientes. O Nubank já possui outras autorizações regulatórias, como Instituição de Pagamento e Sociedade de Crédito, Financiamento e Investimento. A aquisição do Banco Porto Real, que atua na concessão de crédito para o segmento de atacado e possui ativos de R$ 32,1 milhões, é parte da estratégia do Nubank de expandir sua participação no mercado brasileiro, onde já conta com mais de 115 milhões de clientes. A operação pode sinalizar um movimento de consolidação no setor bancário, dependendo da resposta do Banco Central e da aceitação do mercado.
+
+Fonte: [Valor](https://valor.globo.com/financas/noticia/2026/07/20/nubank-anuncia-compra-do-banco-porto-real-para-obter-licenca-bancaria-no-brasil.ghtml)
