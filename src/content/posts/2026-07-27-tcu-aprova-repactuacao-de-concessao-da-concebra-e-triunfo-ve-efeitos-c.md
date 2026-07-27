@@ -1,0 +1,15 @@
+---
+title: "TCU aprova repactuação de concessão da Concebra, e Triunfo vê efeitos contábeis ‘relevantes’"
+slug: "tcu-aprova-repactuacao-de-concessao-da-concebra-e-triunfo-ve-efeitos-c"
+description: "A Triunfo anunciou que o Tribunal de Contas da União (TCU) aprovou uma solução consensual para a repactuação do contrato de concessão da Concebra, sua subsidiária que opera…"
+summary_full: "A Triunfo anunciou que o Tribunal de Contas da União (TCU) aprovou uma solução consensual para a repactuação do contrato de concessão da Concebra, sua subsidiária que opera trechos das rodovias BR-060 e BR-153. A proposta inclui um processo competitivo para a transferência do controle acionário da Concebra. Se essa transferência não for bem-sucedida, a concessão será cedida a outra operadora, resultando na saída definitiva da Concebra da Rota do Pequi até 16 de dezembro de 2026. No contexto dessa repactuação, a Triunfo assumirá obrigações financeiras que incluem um aporte de até R$ 308,3 milhões na Concebra, podendo ser reduzido a R$ 168,9 milhões dependendo de negociações com o BNDES. Além disso, a empresa terá que lidar com passivos relacionados a processos administrativos que totalizam aproximadamente R$ 477 milhões. A implementação dessa solução terá efeitos contábeis significativos, incluindo a baixa integral de um ativo financeiro da concessionária, que é estimado em cerca de R$ 953 milhões. Essa situação pode sinalizar uma reavaliação da estrutura de capital da Triunfo e suas implicações no mercado de concessões."
+date: "2026-07-27"
+category: "reestruturacao"
+source_name: "Valor"
+source_url: "https://valor.globo.com/empresas/noticia/2026/07/24/tcu-aprova-repactuacao-de-concessao-da-concebra-e-triunfo-ve-efeitos-contabeis-relevantes.ghtml"
+image: "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
+---
+
+A Triunfo anunciou que o Tribunal de Contas da União (TCU) aprovou uma solução consensual para a repactuação do contrato de concessão da Concebra, sua subsidiária que opera trechos das rodovias BR-060 e BR-153. A proposta inclui um processo competitivo para a transferência do controle acionário da Concebra. Se essa transferência não for bem-sucedida, a concessão será cedida a outra operadora, resultando na saída definitiva da Concebra da Rota do Pequi até 16 de dezembro de 2026. No contexto dessa repactuação, a Triunfo assumirá obrigações financeiras que incluem um aporte de até R$ 308,3 milhões na Concebra, podendo ser reduzido a R$ 168,9 milhões dependendo de negociações com o BNDES. Além disso, a empresa terá que lidar com passivos relacionados a processos administrativos que totalizam aproximadamente R$ 477 milhões. A implementação dessa solução terá efeitos contábeis significativos, incluindo a baixa integral de um ativo financeiro da concessionária, que é estimado em cerca de R$ 953 milhões. Essa situação pode sinalizar uma reavaliação da estrutura de capital da Triunfo e suas implicações no mercado de concessões.
+
+Fonte: [Valor](https://valor.globo.com/empresas/noticia/2026/07/24/tcu-aprova-repactuacao-de-concessao-da-concebra-e-triunfo-ve-efeitos-contabeis-relevantes.ghtml)
