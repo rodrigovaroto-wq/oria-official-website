@@ -1,0 +1,15 @@
+---
+title: "Matrix passa por reestruturação, mas não prepara RJ, diz CEO"
+slug: "matrix-passa-por-reestruturacao-mas-nao-prepara-rj-diz-ceo"
+description: "A Matrix Energia, controlada pela Prisma Capital e pela Duferco, iniciou um processo de reestruturação com o apoio da Alvarez Marsal, sem intenção de solicitar recuperação…"
+summary_full: "A Matrix Energia, controlada pela Prisma Capital e pela Duferco, iniciou um processo de reestruturação com o apoio da Alvarez Marsal, sem intenção de solicitar recuperação judicial, conforme declarado por seu CEO, Wilson Ferreira Jr. Em janeiro e fevereiro, os acionistas injetaram R$ 200 milhões na empresa, que também levantou capital com a venda de uma usina de geração centralizada. A Matrix, uma das principais comercializadoras de energia do Brasil, enfrenta um cenário desafiador devido à baixa liquidez no mercado de eletricidade e dificuldades financeiras de outras comercializadoras, como a Thopen, que recentemente obteve proteção judicial contra credores. A empresa está reestruturando suas operações, reduzindo seu quadro de funcionários de 500 para 340 e mudando de sede. Ferreira destacou que a Matrix possui projetos prontos para o leilão de baterias e está importando gás da Bolívia, além de ter obtido financiamento adicional com a Finep. O contexto atual do mercado de eletricidade, marcado por volatilidade e concorrência intensa, pode sinalizar desafios contínuos para as comercializadoras, dependendo da recuperação da liquidez e da estabilidade dos preços."
+date: "2026-08-03"
+category: "reestruturacao"
+source_name: "Brazil Journal"
+source_url: "https://braziljournal.com/matrix-passa-por-reestruturacao-mas-nao-prepara-rj-diz-ceo/"
+image: "https://braziljournal.com/wp-content/uploads/2022/06/10291-839cecde-002d-0059-09e1-c8172e533b0a.jpg"
+---
+
+A Matrix Energia, controlada pela Prisma Capital e pela Duferco, iniciou um processo de reestruturação com o apoio da Alvarez Marsal, sem intenção de solicitar recuperação judicial, conforme declarado por seu CEO, Wilson Ferreira Jr. Em janeiro e fevereiro, os acionistas injetaram R$ 200 milhões na empresa, que também levantou capital com a venda de uma usina de geração centralizada. A Matrix, uma das principais comercializadoras de energia do Brasil, enfrenta um cenário desafiador devido à baixa liquidez no mercado de eletricidade e dificuldades financeiras de outras comercializadoras, como a Thopen, que recentemente obteve proteção judicial contra credores. A empresa está reestruturando suas operações, reduzindo seu quadro de funcionários de 500 para 340 e mudando de sede. Ferreira destacou que a Matrix possui projetos prontos para o leilão de baterias e está importando gás da Bolívia, além de ter obtido financiamento adicional com a Finep. O contexto atual do mercado de eletricidade, marcado por volatilidade e concorrência intensa, pode sinalizar desafios contínuos para as comercializadoras, dependendo da recuperação da liquidez e da estabilidade dos preços.
+
+Fonte: [Brazil Journal](https://braziljournal.com/matrix-passa-por-reestruturacao-mas-nao-prepara-rj-diz-ceo/)
