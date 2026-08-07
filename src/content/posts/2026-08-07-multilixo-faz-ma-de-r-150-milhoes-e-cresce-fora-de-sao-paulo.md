@@ -1,0 +1,15 @@
+---
+title: "Multilixo faz M&A de R$ 150 milhões e cresce fora de São Paulo"
+slug: "multilixo-faz-ma-de-r-150-milhoes-e-cresce-fora-de-sao-paulo"
+description: "O Grupo Multilixo anunciou a aquisição de 100% da RCR Ambiental por R$ 150 milhões, marcando a maior transação da empresa desde sua fundação em 1996."
+summary_full: "O Grupo Multilixo anunciou a aquisição de 100% da RCR Ambiental por R$ 150 milhões, marcando a maior transação da empresa desde sua fundação em 1996. Esta aquisição é a 28ª da Multilixo, que iniciou um ciclo de consolidação em 2018 e já desembolsou cerca de R$ 600 milhões em operações de M&A. A Multilixo, a maior empresa de coleta no setor privado do Brasil, tem uma receita anual estimada em R$ 1,5 bilhão, embora não divulgue oficialmente seus números. A compra da RCR, que gera 20% de sua receita fora de São Paulo, representa uma expansão significativa da Multilixo em outros estados, especialmente no Rio de Janeiro e Goiás. A RCR se destaca pela recuperação fiscal de produtos vencidos e avariados, um serviço que pode ser oferecido aos mais de 8 mil clientes da Multilixo. A empresa planeja investir R$ 350 milhões em 2023, além de R$ 400 milhões até 2027, focando no crescimento orgânico e na verticalização de suas operações. Apesar do alto volume de investimentos, a Multilixo apresenta uma alavancagem de apenas 0,6x EBITDA. A transação pode sinalizar um movimento de consolidação no setor de resíduos, dependendo da resposta do mercado a essa nova dinâmica competitiva."
+date: "2026-08-07"
+category: "ma"
+source_name: "Brazil Journal"
+source_url: "https://braziljournal.com/multilixo-faz-ma-de-r-150-milhoes-e-cresce-fora-de-sao-paulo/"
+image: "https://braziljournal.com/wp-content/uploads/2026/08/08-05-Flavio-Urias-ok.jpg"
+---
+
+O Grupo Multilixo anunciou a aquisição de 100% da RCR Ambiental por R$ 150 milhões, marcando a maior transação da empresa desde sua fundação em 1996. Esta aquisição é a 28ª da Multilixo, que iniciou um ciclo de consolidação em 2018 e já desembolsou cerca de R$ 600 milhões em operações de M&A. A Multilixo, a maior empresa de coleta no setor privado do Brasil, tem uma receita anual estimada em R$ 1,5 bilhão, embora não divulgue oficialmente seus números. A compra da RCR, que gera 20% de sua receita fora de São Paulo, representa uma expansão significativa da Multilixo em outros estados, especialmente no Rio de Janeiro e Goiás. A RCR se destaca pela recuperação fiscal de produtos vencidos e avariados, um serviço que pode ser oferecido aos mais de 8 mil clientes da Multilixo. A empresa planeja investir R$ 350 milhões em 2023, além de R$ 400 milhões até 2027, focando no crescimento orgânico e na verticalização de suas operações. Apesar do alto volume de investimentos, a Multilixo apresenta uma alavancagem de apenas 0,6x EBITDA. A transação pode sinalizar um movimento de consolidação no setor de resíduos, dependendo da resposta do mercado a essa nova dinâmica competitiva.
+
+Fonte: [Brazil Journal](https://braziljournal.com/multilixo-faz-ma-de-r-150-milhoes-e-cresce-fora-de-sao-paulo/)
