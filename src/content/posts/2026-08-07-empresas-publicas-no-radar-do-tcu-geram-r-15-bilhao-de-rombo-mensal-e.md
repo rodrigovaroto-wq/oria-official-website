@@ -1,0 +1,15 @@
+---
+title: "Empresas públicas no radar do TCU geram R$ 1,5 bilhão de rombo mensal e Tesouro paga a conta"
+slug: "empresas-publicas-no-radar-do-tcu-geram-r-15-bilhao-de-rombo-mensal-e"
+description: "Uma auditoria do Tribunal de Contas da União (TCU) revelou um déficit mensal de R$ 1,5 bilhão em pelo menos dez empresas públicas federais, com a Empresa Brasileira de Correios e…"
+summary_full: "Uma auditoria do Tribunal de Contas da União (TCU) revelou um déficit mensal de R$ 1,5 bilhão em pelo menos dez empresas públicas federais, com a Empresa Brasileira de Correios e Telégrafos sendo identificada como o principal fator de incerteza fiscal. A estatal postal acumulou um prejuízo líquido de R$ 8,5 bilhões em 2025, enquanto sua participação no mercado de encomendas caiu 30% entre 2018 e 2025. As despesas com pessoal aumentaram, representando mais de 60% dos gastos totais. Para manter suas operações, os Correios contraíram R$ 12 bilhões em empréstimos com garantia da União, com um custo projetado de R$ 34,2 bilhões até 2040. Além disso, a empresa necessita de um aporte de pelo menos R$ 6 bilhões até 2027 e está em busca de uma nova linha de crédito de R$ 8 bilhões para 2026. O Plano de Desligamento Voluntário (PDV) teve adesões abaixo da meta, e a alienação de imóveis arrecadou apenas R$ 11 milhões, muito aquém do esperado. A situação financeira crítica dos Correios e de outras estatais, como a Eletronuclear, pode sinalizar um aumento na pressão sobre o orçamento do governo, caso a classificação das empresas mude para dependente."
+date: "2026-08-07"
+category: "reestruturacao"
+source_name: "Money Times"
+source_url: "https://www.moneytimes.com.br/empresas-publicas-no-radar-do-tcu-geram-r-15-bilhao-de-rombo-mensal-e-tesouro-paga-a-conta-gaep/"
+image: "https://www.moneytimes.com.br/uploads/2026/07/correios-e1786021896503.jpg"
+---
+
+Uma auditoria do Tribunal de Contas da União (TCU) revelou um déficit mensal de R$ 1,5 bilhão em pelo menos dez empresas públicas federais, com a Empresa Brasileira de Correios e Telégrafos sendo identificada como o principal fator de incerteza fiscal. A estatal postal acumulou um prejuízo líquido de R$ 8,5 bilhões em 2025, enquanto sua participação no mercado de encomendas caiu 30% entre 2018 e 2025. As despesas com pessoal aumentaram, representando mais de 60% dos gastos totais. Para manter suas operações, os Correios contraíram R$ 12 bilhões em empréstimos com garantia da União, com um custo projetado de R$ 34,2 bilhões até 2040. Além disso, a empresa necessita de um aporte de pelo menos R$ 6 bilhões até 2027 e está em busca de uma nova linha de crédito de R$ 8 bilhões para 2026. O Plano de Desligamento Voluntário (PDV) teve adesões abaixo da meta, e a alienação de imóveis arrecadou apenas R$ 11 milhões, muito aquém do esperado. A situação financeira crítica dos Correios e de outras estatais, como a Eletronuclear, pode sinalizar um aumento na pressão sobre o orçamento do governo, caso a classificação das empresas mude para dependente.
+
+Fonte: [Money Times](https://www.moneytimes.com.br/empresas-publicas-no-radar-do-tcu-geram-r-15-bilhao-de-rombo-mensal-e-tesouro-paga-a-conta-gaep/)
